@@ -1,0 +1,1574 @@
+{
+  "dataVersion": "1.0.0",
+  "stock_out": [
+    {
+      "id": "ev_stockout_app_1",
+      "sector": "app",
+      "titleKey": "ev.ev_stockout_app_1.title",
+      "descKey": "ev.ev_stockout_app_1.desc",
+      "durationHours": 5.4,
+      "incomePenaltyPct": 35
+    },
+    {
+      "id": "ev_stockout_app_2",
+      "sector": "app",
+      "titleKey": "ev.ev_stockout_app_2.title",
+      "descKey": "ev.ev_stockout_app_2.desc",
+      "durationHours": 3.2,
+      "incomePenaltyPct": 35
+    },
+    {
+      "id": "ev_stockout_app_3",
+      "sector": "app",
+      "titleKey": "ev.ev_stockout_app_3.title",
+      "descKey": "ev.ev_stockout_app_3.desc",
+      "durationHours": 5.7,
+      "incomePenaltyPct": 40
+    },
+    {
+      "id": "ev_stockout_app_4",
+      "sector": "app",
+      "titleKey": "ev.ev_stockout_app_4.title",
+      "descKey": "ev.ev_stockout_app_4.desc",
+      "durationHours": 4.3,
+      "incomePenaltyPct": 35
+    },
+    {
+      "id": "ev_stockout_fnb_1",
+      "sector": "fnb",
+      "titleKey": "ev.ev_stockout_fnb_1.title",
+      "descKey": "ev.ev_stockout_fnb_1.desc",
+      "durationHours": 2.6,
+      "incomePenaltyPct": 20
+    },
+    {
+      "id": "ev_stockout_fnb_2",
+      "sector": "fnb",
+      "titleKey": "ev.ev_stockout_fnb_2.title",
+      "descKey": "ev.ev_stockout_fnb_2.desc",
+      "durationHours": 4.9,
+      "incomePenaltyPct": 40
+    },
+    {
+      "id": "ev_stockout_fnb_3",
+      "sector": "fnb",
+      "titleKey": "ev.ev_stockout_fnb_3.title",
+      "descKey": "ev.ev_stockout_fnb_3.desc",
+      "durationHours": 2.1,
+      "incomePenaltyPct": 40
+    },
+    {
+      "id": "ev_stockout_fnb_4",
+      "sector": "fnb",
+      "titleKey": "ev.ev_stockout_fnb_4.title",
+      "descKey": "ev.ev_stockout_fnb_4.desc",
+      "durationHours": 3.9,
+      "incomePenaltyPct": 25
+    },
+    {
+      "id": "ev_stockout_logistics_1",
+      "sector": "logistics",
+      "titleKey": "ev.ev_stockout_logistics_1.title",
+      "descKey": "ev.ev_stockout_logistics_1.desc",
+      "durationHours": 5.2,
+      "incomePenaltyPct": 30
+    },
+    {
+      "id": "ev_stockout_logistics_2",
+      "sector": "logistics",
+      "titleKey": "ev.ev_stockout_logistics_2.title",
+      "descKey": "ev.ev_stockout_logistics_2.desc",
+      "durationHours": 3.4,
+      "incomePenaltyPct": 25
+    },
+    {
+      "id": "ev_stockout_logistics_3",
+      "sector": "logistics",
+      "titleKey": "ev.ev_stockout_logistics_3.title",
+      "descKey": "ev.ev_stockout_logistics_3.desc",
+      "durationHours": 3.7,
+      "incomePenaltyPct": 30
+    },
+    {
+      "id": "ev_stockout_logistics_4",
+      "sector": "logistics",
+      "titleKey": "ev.ev_stockout_logistics_4.title",
+      "descKey": "ev.ev_stockout_logistics_4.desc",
+      "durationHours": 5.8,
+      "incomePenaltyPct": 20
+    }
+  ],
+  "bidding_war": [
+    {
+      "id": "ev_bidwar_1",
+      "titleKey": "ev.ev_bidwar_1.title",
+      "descKey": "ev.ev_bidwar_1.desc",
+      "durationHours": 4,
+      "extraCompetitorCount": 1,
+      "aggressionBoostPct": 20
+    },
+    {
+      "id": "ev_bidwar_2",
+      "titleKey": "ev.ev_bidwar_2.title",
+      "descKey": "ev.ev_bidwar_2.desc",
+      "durationHours": 8,
+      "extraCompetitorCount": 1,
+      "aggressionBoostPct": 15
+    },
+    {
+      "id": "ev_bidwar_3",
+      "titleKey": "ev.ev_bidwar_3.title",
+      "descKey": "ev.ev_bidwar_3.desc",
+      "durationHours": 3,
+      "extraCompetitorCount": 2,
+      "aggressionBoostPct": 10
+    },
+    {
+      "id": "ev_bidwar_4",
+      "titleKey": "ev.ev_bidwar_4.title",
+      "descKey": "ev.ev_bidwar_4.desc",
+      "durationHours": 8,
+      "extraCompetitorCount": 1,
+      "aggressionBoostPct": 15
+    },
+    {
+      "id": "ev_bidwar_5",
+      "titleKey": "ev.ev_bidwar_5.title",
+      "descKey": "ev.ev_bidwar_5.desc",
+      "durationHours": 8,
+      "extraCompetitorCount": 2,
+      "aggressionBoostPct": 20
+    },
+    {
+      "id": "ev_bidwar_6",
+      "titleKey": "ev.ev_bidwar_6.title",
+      "descKey": "ev.ev_bidwar_6.desc",
+      "durationHours": 3,
+      "extraCompetitorCount": 1,
+      "aggressionBoostPct": 10
+    },
+    {
+      "id": "ev_bidwar_7",
+      "titleKey": "ev.ev_bidwar_7.title",
+      "descKey": "ev.ev_bidwar_7.desc",
+      "durationHours": 4,
+      "extraCompetitorCount": 2,
+      "aggressionBoostPct": 25
+    },
+    {
+      "id": "ev_bidwar_8",
+      "titleKey": "ev.ev_bidwar_8.title",
+      "descKey": "ev.ev_bidwar_8.desc",
+      "durationHours": 8,
+      "extraCompetitorCount": 1,
+      "aggressionBoostPct": 25
+    }
+  ],
+  "daily_contract": [
+    {
+      "id": "ev_contract_01",
+      "tierBand": 1,
+      "sector": "fnb",
+      "titleKey": "ev.ev_contract_01.title",
+      "descKey": "ev.ev_contract_01.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "collect_income",
+        "amount": 8000
+      },
+      "reward": {
+        "tm": 1700,
+        "dp": 2
+      }
+    },
+    {
+      "id": "ev_contract_02",
+      "tierBand": 1,
+      "sector": "app",
+      "titleKey": "ev.ev_contract_02.title",
+      "descKey": "ev.ev_contract_02.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "win_auction",
+        "amount": 1
+      },
+      "reward": {
+        "tm": 1700,
+        "dp": 0
+      }
+    },
+    {
+      "id": "ev_contract_03",
+      "tierBand": 1,
+      "sector": "fnb",
+      "titleKey": "ev.ev_contract_03.title",
+      "descKey": "ev.ev_contract_03.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "upgrade_operations",
+        "amount": 2
+      },
+      "reward": {
+        "tm": 1200,
+        "dp": 0
+      }
+    },
+    {
+      "id": "ev_contract_04",
+      "tierBand": 1,
+      "sector": "logistics",
+      "titleKey": "ev.ev_contract_04.title",
+      "descKey": "ev.ev_contract_04.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "hire_staff",
+        "amount": 2
+      },
+      "reward": {
+        "tm": 1300,
+        "dp": 0
+      }
+    },
+    {
+      "id": "ev_contract_05",
+      "tierBand": 1,
+      "sector": "app",
+      "titleKey": "ev.ev_contract_05.title",
+      "descKey": "ev.ev_contract_05.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "gain_reputation",
+        "amount": 10
+      },
+      "reward": {
+        "tm": 1400,
+        "dp": 0
+      }
+    },
+    {
+      "id": "ev_contract_06",
+      "tierBand": 1,
+      "sector": "fnb",
+      "titleKey": "ev.ev_contract_06.title",
+      "descKey": "ev.ev_contract_06.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "complete_contracts",
+        "amount": 3
+      },
+      "reward": {
+        "tm": 1300,
+        "dp": 0
+      }
+    },
+    {
+      "id": "ev_contract_07",
+      "tierBand": 1,
+      "sector": "app",
+      "titleKey": "ev.ev_contract_07.title",
+      "descKey": "ev.ev_contract_07.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "collect_income",
+        "amount": 8000
+      },
+      "reward": {
+        "tm": 1600,
+        "dp": 2
+      }
+    },
+    {
+      "id": "ev_contract_08",
+      "tierBand": 1,
+      "sector": "any",
+      "titleKey": "ev.ev_contract_08.title",
+      "descKey": "ev.ev_contract_08.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "win_auction",
+        "amount": 2
+      },
+      "reward": {
+        "tm": 1300,
+        "dp": 0
+      }
+    },
+    {
+      "id": "ev_contract_09",
+      "tierBand": 2,
+      "sector": "fnb",
+      "titleKey": "ev.ev_contract_09.title",
+      "descKey": "ev.ev_contract_09.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "upgrade_operations",
+        "amount": 6
+      },
+      "reward": {
+        "tm": 6200,
+        "dp": 0
+      }
+    },
+    {
+      "id": "ev_contract_10",
+      "tierBand": 2,
+      "sector": "any",
+      "titleKey": "ev.ev_contract_10.title",
+      "descKey": "ev.ev_contract_10.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "hire_staff",
+        "amount": 3
+      },
+      "reward": {
+        "tm": 6700,
+        "dp": 0
+      }
+    },
+    {
+      "id": "ev_contract_11",
+      "tierBand": 2,
+      "sector": "logistics",
+      "titleKey": "ev.ev_contract_11.title",
+      "descKey": "ev.ev_contract_11.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "gain_reputation",
+        "amount": 10
+      },
+      "reward": {
+        "tm": 9200,
+        "dp": 0
+      }
+    },
+    {
+      "id": "ev_contract_12",
+      "tierBand": 2,
+      "sector": "fnb",
+      "titleKey": "ev.ev_contract_12.title",
+      "descKey": "ev.ev_contract_12.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "complete_contracts",
+        "amount": 3
+      },
+      "reward": {
+        "tm": 8900,
+        "dp": 0
+      }
+    },
+    {
+      "id": "ev_contract_13",
+      "tierBand": 2,
+      "sector": "fnb",
+      "titleKey": "ev.ev_contract_13.title",
+      "descKey": "ev.ev_contract_13.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "collect_income",
+        "amount": 40000
+      },
+      "reward": {
+        "tm": 7300,
+        "dp": 2
+      }
+    },
+    {
+      "id": "ev_contract_14",
+      "tierBand": 2,
+      "sector": "app",
+      "titleKey": "ev.ev_contract_14.title",
+      "descKey": "ev.ev_contract_14.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "win_auction",
+        "amount": 2
+      },
+      "reward": {
+        "tm": 6900,
+        "dp": 0
+      }
+    },
+    {
+      "id": "ev_contract_15",
+      "tierBand": 2,
+      "sector": "fnb",
+      "titleKey": "ev.ev_contract_15.title",
+      "descKey": "ev.ev_contract_15.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "upgrade_operations",
+        "amount": 5
+      },
+      "reward": {
+        "tm": 8200,
+        "dp": 0
+      }
+    },
+    {
+      "id": "ev_contract_16",
+      "tierBand": 2,
+      "sector": "fnb",
+      "titleKey": "ev.ev_contract_16.title",
+      "descKey": "ev.ev_contract_16.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "hire_staff",
+        "amount": 1
+      },
+      "reward": {
+        "tm": 8900,
+        "dp": 0
+      }
+    },
+    {
+      "id": "ev_contract_17",
+      "tierBand": 3,
+      "sector": "logistics",
+      "titleKey": "ev.ev_contract_17.title",
+      "descKey": "ev.ev_contract_17.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "gain_reputation",
+        "amount": 8
+      },
+      "reward": {
+        "tm": 53700,
+        "dp": 0
+      }
+    },
+    {
+      "id": "ev_contract_18",
+      "tierBand": 3,
+      "sector": "any",
+      "titleKey": "ev.ev_contract_18.title",
+      "descKey": "ev.ev_contract_18.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "complete_contracts",
+        "amount": 3
+      },
+      "reward": {
+        "tm": 61800,
+        "dp": 0
+      }
+    },
+    {
+      "id": "ev_contract_19",
+      "tierBand": 3,
+      "sector": "fnb",
+      "titleKey": "ev.ev_contract_19.title",
+      "descKey": "ev.ev_contract_19.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "collect_income",
+        "amount": 250000
+      },
+      "reward": {
+        "tm": 52500,
+        "dp": 1
+      }
+    },
+    {
+      "id": "ev_contract_20",
+      "tierBand": 3,
+      "sector": "fnb",
+      "titleKey": "ev.ev_contract_20.title",
+      "descKey": "ev.ev_contract_20.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "win_auction",
+        "amount": 2
+      },
+      "reward": {
+        "tm": 54600,
+        "dp": 0
+      }
+    },
+    {
+      "id": "ev_contract_21",
+      "tierBand": 3,
+      "sector": "logistics",
+      "titleKey": "ev.ev_contract_21.title",
+      "descKey": "ev.ev_contract_21.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "upgrade_operations",
+        "amount": 5
+      },
+      "reward": {
+        "tm": 58300,
+        "dp": 0
+      }
+    },
+    {
+      "id": "ev_contract_22",
+      "tierBand": 3,
+      "sector": "any",
+      "titleKey": "ev.ev_contract_22.title",
+      "descKey": "ev.ev_contract_22.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "hire_staff",
+        "amount": 1
+      },
+      "reward": {
+        "tm": 51000,
+        "dp": 0
+      }
+    },
+    {
+      "id": "ev_contract_23",
+      "tierBand": 3,
+      "sector": "any",
+      "titleKey": "ev.ev_contract_23.title",
+      "descKey": "ev.ev_contract_23.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "gain_reputation",
+        "amount": 10
+      },
+      "reward": {
+        "tm": 61300,
+        "dp": 0
+      }
+    },
+    {
+      "id": "ev_contract_24",
+      "tierBand": 4,
+      "sector": "app",
+      "titleKey": "ev.ev_contract_24.title",
+      "descKey": "ev.ev_contract_24.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "complete_contracts",
+        "amount": 2
+      },
+      "reward": {
+        "tm": 192500,
+        "dp": 0
+      }
+    },
+    {
+      "id": "ev_contract_25",
+      "tierBand": 4,
+      "sector": "fnb",
+      "titleKey": "ev.ev_contract_25.title",
+      "descKey": "ev.ev_contract_25.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "collect_income",
+        "amount": 1200000
+      },
+      "reward": {
+        "tm": 239200,
+        "dp": 0
+      }
+    },
+    {
+      "id": "ev_contract_26",
+      "tierBand": 4,
+      "sector": "any",
+      "titleKey": "ev.ev_contract_26.title",
+      "descKey": "ev.ev_contract_26.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "win_auction",
+        "amount": 2
+      },
+      "reward": {
+        "tm": 210900,
+        "dp": 0
+      }
+    },
+    {
+      "id": "ev_contract_27",
+      "tierBand": 4,
+      "sector": "fnb",
+      "titleKey": "ev.ev_contract_27.title",
+      "descKey": "ev.ev_contract_27.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "upgrade_operations",
+        "amount": 5
+      },
+      "reward": {
+        "tm": 207200,
+        "dp": 0
+      }
+    },
+    {
+      "id": "ev_contract_28",
+      "tierBand": 4,
+      "sector": "logistics",
+      "titleKey": "ev.ev_contract_28.title",
+      "descKey": "ev.ev_contract_28.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "hire_staff",
+        "amount": 3
+      },
+      "reward": {
+        "tm": 216300,
+        "dp": 0
+      }
+    },
+    {
+      "id": "ev_contract_29",
+      "tierBand": 4,
+      "sector": "logistics",
+      "titleKey": "ev.ev_contract_29.title",
+      "descKey": "ev.ev_contract_29.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "gain_reputation",
+        "amount": 8
+      },
+      "reward": {
+        "tm": 191600,
+        "dp": 0
+      }
+    },
+    {
+      "id": "ev_contract_30",
+      "tierBand": 4,
+      "sector": "fnb",
+      "titleKey": "ev.ev_contract_30.title",
+      "descKey": "ev.ev_contract_30.desc",
+      "durationHours": 24,
+      "goal": {
+        "type": "complete_contracts",
+        "amount": 3
+      },
+      "reward": {
+        "tm": 225500,
+        "dp": 0
+      }
+    }
+  ],
+  "weekly_target": [
+    {
+      "id": "ev_weekly_01",
+      "tierBand": 1,
+      "titleKey": "ev.ev_weekly_01.title",
+      "descKey": "ev.ev_weekly_01.desc",
+      "durationHours": 168,
+      "goal": {
+        "type": "win_auction",
+        "amount": 5
+      },
+      "reward": {
+        "dp": 12,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ev_weekly_02",
+      "tierBand": 1,
+      "titleKey": "ev.ev_weekly_02.title",
+      "descKey": "ev.ev_weekly_02.desc",
+      "durationHours": 168,
+      "goal": {
+        "type": "upgrade_operations",
+        "amount": 18
+      },
+      "reward": {
+        "dp": 10,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ev_weekly_03",
+      "tierBand": 1,
+      "titleKey": "ev.ev_weekly_03.title",
+      "descKey": "ev.ev_weekly_03.desc",
+      "durationHours": 168,
+      "goal": {
+        "type": "hire_staff",
+        "amount": 5
+      },
+      "reward": {
+        "dp": 8,
+        "cosmeticRef": "cs_title_11"
+      }
+    },
+    {
+      "id": "ev_weekly_04",
+      "tierBand": 2,
+      "titleKey": "ev.ev_weekly_04.title",
+      "descKey": "ev.ev_weekly_04.desc",
+      "durationHours": 168,
+      "goal": {
+        "type": "gain_reputation",
+        "amount": 20
+      },
+      "reward": {
+        "dp": 14,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ev_weekly_05",
+      "tierBand": 2,
+      "titleKey": "ev.ev_weekly_05.title",
+      "descKey": "ev.ev_weekly_05.desc",
+      "durationHours": 168,
+      "goal": {
+        "type": "complete_contracts",
+        "amount": 8
+      },
+      "reward": {
+        "dp": 17,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ev_weekly_06",
+      "tierBand": 2,
+      "titleKey": "ev.ev_weekly_06.title",
+      "descKey": "ev.ev_weekly_06.desc",
+      "durationHours": 168,
+      "goal": {
+        "type": "collect_income",
+        "amount": 200000
+      },
+      "reward": {
+        "dp": 13,
+        "cosmeticRef": "cs_title_14"
+      }
+    },
+    {
+      "id": "ev_weekly_07",
+      "tierBand": 3,
+      "titleKey": "ev.ev_weekly_07.title",
+      "descKey": "ev.ev_weekly_07.desc",
+      "durationHours": 168,
+      "goal": {
+        "type": "win_auction",
+        "amount": 4
+      },
+      "reward": {
+        "dp": 24,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ev_weekly_08",
+      "tierBand": 3,
+      "titleKey": "ev.ev_weekly_08.title",
+      "descKey": "ev.ev_weekly_08.desc",
+      "durationHours": 168,
+      "goal": {
+        "type": "upgrade_operations",
+        "amount": 10
+      },
+      "reward": {
+        "dp": 26,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ev_weekly_09",
+      "tierBand": 3,
+      "titleKey": "ev.ev_weekly_09.title",
+      "descKey": "ev.ev_weekly_09.desc",
+      "durationHours": 168,
+      "goal": {
+        "type": "hire_staff",
+        "amount": 7
+      },
+      "reward": {
+        "dp": 25,
+        "cosmeticRef": "cs_logo_01"
+      }
+    },
+    {
+      "id": "ev_weekly_10",
+      "tierBand": 4,
+      "titleKey": "ev.ev_weekly_10.title",
+      "descKey": "ev.ev_weekly_10.desc",
+      "durationHours": 168,
+      "goal": {
+        "type": "gain_reputation",
+        "amount": 20
+      },
+      "reward": {
+        "dp": 50,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ev_weekly_11",
+      "tierBand": 4,
+      "titleKey": "ev.ev_weekly_11.title",
+      "descKey": "ev.ev_weekly_11.desc",
+      "durationHours": 168,
+      "goal": {
+        "type": "complete_contracts",
+        "amount": 8
+      },
+      "reward": {
+        "dp": 37,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ev_weekly_12",
+      "tierBand": 4,
+      "titleKey": "ev.ev_weekly_12.title",
+      "descKey": "ev.ev_weekly_12.desc",
+      "durationHours": 168,
+      "goal": {
+        "type": "collect_income",
+        "amount": 6000000
+      },
+      "reward": {
+        "dp": 39,
+        "cosmeticRef": "cs_logo_04"
+      }
+    }
+  ],
+  "market_news": [
+    {
+      "id": "ev_news_001",
+      "scope": "global",
+      "titleKey": "news.ev_news_001",
+      "effect": {
+        "incomePercentPct": 3.4,
+        "durationHours": 4
+      },
+      "weight": 1
+    },
+    {
+      "id": "ev_news_002",
+      "scope": "app",
+      "titleKey": "news.ev_news_002",
+      "effect": {
+        "incomePercentPct": 3.8,
+        "durationHours": 8
+      },
+      "weight": 3
+    },
+    {
+      "id": "ev_news_003",
+      "scope": "logistics",
+      "titleKey": "news.ev_news_003",
+      "effect": {
+        "incomePercentPct": -3.1,
+        "durationHours": 8
+      },
+      "weight": 4
+    },
+    {
+      "id": "ev_news_004",
+      "scope": "global",
+      "titleKey": "news.ev_news_004",
+      "effect": {
+        "incomePercentPct": -2.3,
+        "durationHours": 12
+      },
+      "weight": 1
+    },
+    {
+      "id": "ev_news_005",
+      "scope": "logistics",
+      "titleKey": "news.ev_news_005",
+      "effect": null,
+      "weight": 5
+    },
+    {
+      "id": "ev_news_006",
+      "scope": "app",
+      "titleKey": "news.ev_news_006",
+      "effect": {
+        "incomePercentPct": 2.2,
+        "durationHours": 8
+      },
+      "weight": 2
+    },
+    {
+      "id": "ev_news_007",
+      "scope": "app",
+      "titleKey": "news.ev_news_007",
+      "effect": {
+        "incomePercentPct": -3.3,
+        "durationHours": 4
+      },
+      "weight": 1
+    },
+    {
+      "id": "ev_news_008",
+      "scope": "logistics",
+      "titleKey": "news.ev_news_008",
+      "effect": null,
+      "weight": 5
+    },
+    {
+      "id": "ev_news_009",
+      "scope": "global",
+      "titleKey": "news.ev_news_009",
+      "effect": {
+        "incomePercentPct": -2.7,
+        "durationHours": 4
+      },
+      "weight": 1
+    },
+    {
+      "id": "ev_news_010",
+      "scope": "fnb",
+      "titleKey": "news.ev_news_010",
+      "effect": {
+        "incomePercentPct": 4.8,
+        "durationHours": 4
+      },
+      "weight": 1
+    },
+    {
+      "id": "ev_news_011",
+      "scope": "global",
+      "titleKey": "news.ev_news_011",
+      "effect": null,
+      "weight": 5
+    },
+    {
+      "id": "ev_news_012",
+      "scope": "logistics",
+      "titleKey": "news.ev_news_012",
+      "effect": null,
+      "weight": 5
+    },
+    {
+      "id": "ev_news_013",
+      "scope": "logistics",
+      "titleKey": "news.ev_news_013",
+      "effect": {
+        "incomePercentPct": -3.9,
+        "durationHours": 4
+      },
+      "weight": 2
+    },
+    {
+      "id": "ev_news_014",
+      "scope": "app",
+      "titleKey": "news.ev_news_014",
+      "effect": {
+        "incomePercentPct": 4.0,
+        "durationHours": 8
+      },
+      "weight": 4
+    },
+    {
+      "id": "ev_news_015",
+      "scope": "global",
+      "titleKey": "news.ev_news_015",
+      "effect": {
+        "incomePercentPct": -4.0,
+        "durationHours": 4
+      },
+      "weight": 1
+    },
+    {
+      "id": "ev_news_016",
+      "scope": "app",
+      "titleKey": "news.ev_news_016",
+      "effect": {
+        "incomePercentPct": 3.2,
+        "durationHours": 8
+      },
+      "weight": 1
+    },
+    {
+      "id": "ev_news_017",
+      "scope": "logistics",
+      "titleKey": "news.ev_news_017",
+      "effect": null,
+      "weight": 1
+    },
+    {
+      "id": "ev_news_018",
+      "scope": "fnb",
+      "titleKey": "news.ev_news_018",
+      "effect": {
+        "incomePercentPct": 3.4,
+        "durationHours": 12
+      },
+      "weight": 2
+    },
+    {
+      "id": "ev_news_019",
+      "scope": "fnb",
+      "titleKey": "news.ev_news_019",
+      "effect": null,
+      "weight": 1
+    },
+    {
+      "id": "ev_news_020",
+      "scope": "logistics",
+      "titleKey": "news.ev_news_020",
+      "effect": null,
+      "weight": 5
+    },
+    {
+      "id": "ev_news_021",
+      "scope": "fnb",
+      "titleKey": "news.ev_news_021",
+      "effect": {
+        "incomePercentPct": -2.8,
+        "durationHours": 6
+      },
+      "weight": 5
+    },
+    {
+      "id": "ev_news_022",
+      "scope": "global",
+      "titleKey": "news.ev_news_022",
+      "effect": null,
+      "weight": 5
+    },
+    {
+      "id": "ev_news_023",
+      "scope": "logistics",
+      "titleKey": "news.ev_news_023",
+      "effect": {
+        "incomePercentPct": -2.4,
+        "durationHours": 4
+      },
+      "weight": 4
+    },
+    {
+      "id": "ev_news_024",
+      "scope": "fnb",
+      "titleKey": "news.ev_news_024",
+      "effect": null,
+      "weight": 1
+    },
+    {
+      "id": "ev_news_025",
+      "scope": "fnb",
+      "titleKey": "news.ev_news_025",
+      "effect": null,
+      "weight": 4
+    },
+    {
+      "id": "ev_news_026",
+      "scope": "app",
+      "titleKey": "news.ev_news_026",
+      "effect": null,
+      "weight": 1
+    },
+    {
+      "id": "ev_news_027",
+      "scope": "global",
+      "titleKey": "news.ev_news_027",
+      "effect": {
+        "incomePercentPct": 3.3,
+        "durationHours": 4
+      },
+      "weight": 1
+    },
+    {
+      "id": "ev_news_028",
+      "scope": "global",
+      "titleKey": "news.ev_news_028",
+      "effect": null,
+      "weight": 4
+    },
+    {
+      "id": "ev_news_029",
+      "scope": "app",
+      "titleKey": "news.ev_news_029",
+      "effect": {
+        "incomePercentPct": -2.1,
+        "durationHours": 8
+      },
+      "weight": 3
+    },
+    {
+      "id": "ev_news_030",
+      "scope": "fnb",
+      "titleKey": "news.ev_news_030",
+      "effect": null,
+      "weight": 1
+    },
+    {
+      "id": "ev_news_031",
+      "scope": "global",
+      "titleKey": "news.ev_news_031",
+      "effect": {
+        "incomePercentPct": -4.2,
+        "durationHours": 4
+      },
+      "weight": 3
+    },
+    {
+      "id": "ev_news_032",
+      "scope": "fnb",
+      "titleKey": "news.ev_news_032",
+      "effect": {
+        "incomePercentPct": -2.9,
+        "durationHours": 12
+      },
+      "weight": 4
+    },
+    {
+      "id": "ev_news_033",
+      "scope": "global",
+      "titleKey": "news.ev_news_033",
+      "effect": {
+        "incomePercentPct": -4.7,
+        "durationHours": 12
+      },
+      "weight": 2
+    },
+    {
+      "id": "ev_news_034",
+      "scope": "fnb",
+      "titleKey": "news.ev_news_034",
+      "effect": {
+        "incomePercentPct": -3.9,
+        "durationHours": 4
+      },
+      "weight": 3
+    },
+    {
+      "id": "ev_news_035",
+      "scope": "global",
+      "titleKey": "news.ev_news_035",
+      "effect": null,
+      "weight": 2
+    },
+    {
+      "id": "ev_news_036",
+      "scope": "app",
+      "titleKey": "news.ev_news_036",
+      "effect": {
+        "incomePercentPct": 2.4,
+        "durationHours": 12
+      },
+      "weight": 3
+    },
+    {
+      "id": "ev_news_037",
+      "scope": "logistics",
+      "titleKey": "news.ev_news_037",
+      "effect": {
+        "incomePercentPct": -3.7,
+        "durationHours": 8
+      },
+      "weight": 2
+    },
+    {
+      "id": "ev_news_038",
+      "scope": "app",
+      "titleKey": "news.ev_news_038",
+      "effect": {
+        "incomePercentPct": -3.4,
+        "durationHours": 6
+      },
+      "weight": 2
+    },
+    {
+      "id": "ev_news_039",
+      "scope": "fnb",
+      "titleKey": "news.ev_news_039",
+      "effect": null,
+      "weight": 5
+    },
+    {
+      "id": "ev_news_040",
+      "scope": "global",
+      "titleKey": "news.ev_news_040",
+      "effect": {
+        "incomePercentPct": -3.2,
+        "durationHours": 12
+      },
+      "weight": 4
+    },
+    {
+      "id": "ev_news_041",
+      "scope": "global",
+      "titleKey": "news.ev_news_041",
+      "effect": null,
+      "weight": 1
+    },
+    {
+      "id": "ev_news_042",
+      "scope": "global",
+      "titleKey": "news.ev_news_042",
+      "effect": null,
+      "weight": 3
+    },
+    {
+      "id": "ev_news_043",
+      "scope": "global",
+      "titleKey": "news.ev_news_043",
+      "effect": {
+        "incomePercentPct": 2.6,
+        "durationHours": 4
+      },
+      "weight": 5
+    },
+    {
+      "id": "ev_news_044",
+      "scope": "logistics",
+      "titleKey": "news.ev_news_044",
+      "effect": null,
+      "weight": 4
+    },
+    {
+      "id": "ev_news_045",
+      "scope": "global",
+      "titleKey": "news.ev_news_045",
+      "effect": {
+        "incomePercentPct": -3.1,
+        "durationHours": 6
+      },
+      "weight": 5
+    },
+    {
+      "id": "ev_news_046",
+      "scope": "app",
+      "titleKey": "news.ev_news_046",
+      "effect": {
+        "incomePercentPct": -2.0,
+        "durationHours": 12
+      },
+      "weight": 4
+    },
+    {
+      "id": "ev_news_047",
+      "scope": "app",
+      "titleKey": "news.ev_news_047",
+      "effect": null,
+      "weight": 3
+    },
+    {
+      "id": "ev_news_048",
+      "scope": "app",
+      "titleKey": "news.ev_news_048",
+      "effect": {
+        "incomePercentPct": -3.8,
+        "durationHours": 8
+      },
+      "weight": 4
+    },
+    {
+      "id": "ev_news_049",
+      "scope": "fnb",
+      "titleKey": "news.ev_news_049",
+      "effect": null,
+      "weight": 1
+    },
+    {
+      "id": "ev_news_050",
+      "scope": "logistics",
+      "titleKey": "news.ev_news_050",
+      "effect": null,
+      "weight": 1
+    },
+    {
+      "id": "ev_news_051",
+      "scope": "global",
+      "titleKey": "news.ev_news_051",
+      "effect": null,
+      "weight": 2
+    },
+    {
+      "id": "ev_news_052",
+      "scope": "fnb",
+      "titleKey": "news.ev_news_052",
+      "effect": {
+        "incomePercentPct": -2.8,
+        "durationHours": 6
+      },
+      "weight": 2
+    },
+    {
+      "id": "ev_news_053",
+      "scope": "global",
+      "titleKey": "news.ev_news_053",
+      "effect": null,
+      "weight": 3
+    },
+    {
+      "id": "ev_news_054",
+      "scope": "app",
+      "titleKey": "news.ev_news_054",
+      "effect": null,
+      "weight": 2
+    },
+    {
+      "id": "ev_news_055",
+      "scope": "logistics",
+      "titleKey": "news.ev_news_055",
+      "effect": {
+        "incomePercentPct": -2.9,
+        "durationHours": 6
+      },
+      "weight": 3
+    },
+    {
+      "id": "ev_news_056",
+      "scope": "app",
+      "titleKey": "news.ev_news_056",
+      "effect": null,
+      "weight": 5
+    },
+    {
+      "id": "ev_news_057",
+      "scope": "logistics",
+      "titleKey": "news.ev_news_057",
+      "effect": null,
+      "weight": 1
+    },
+    {
+      "id": "ev_news_058",
+      "scope": "global",
+      "titleKey": "news.ev_news_058",
+      "effect": {
+        "incomePercentPct": 3.5,
+        "durationHours": 8
+      },
+      "weight": 2
+    },
+    {
+      "id": "ev_news_059",
+      "scope": "global",
+      "titleKey": "news.ev_news_059",
+      "effect": null,
+      "weight": 4
+    },
+    {
+      "id": "ev_news_060",
+      "scope": "fnb",
+      "titleKey": "news.ev_news_060",
+      "effect": {
+        "incomePercentPct": -2.6,
+        "durationHours": 6
+      },
+      "weight": 1
+    }
+  ],
+  "micro_event": [
+    {
+      "id": "ev_micro_01",
+      "titleKey": "ev.ev_micro_01.title",
+      "descKey": "ev.ev_micro_01.desc",
+      "durationMinutes": 15,
+      "effect": {
+        "type": "reputation_boost",
+        "value": 3
+      },
+      "weight": 4
+    },
+    {
+      "id": "ev_micro_02",
+      "titleKey": "ev.ev_micro_02.title",
+      "descKey": "ev.ev_micro_02.desc",
+      "durationMinutes": 60,
+      "effect": {
+        "type": "income_percent",
+        "value": 5.3
+      },
+      "weight": 4
+    },
+    {
+      "id": "ev_micro_03",
+      "titleKey": "ev.ev_micro_03.title",
+      "descKey": "ev.ev_micro_03.desc",
+      "durationMinutes": 45,
+      "effect": {
+        "type": "income_percent",
+        "value": 6.6
+      },
+      "weight": 4
+    },
+    {
+      "id": "ev_micro_04",
+      "titleKey": "ev.ev_micro_04.title",
+      "descKey": "ev.ev_micro_04.desc",
+      "durationMinutes": 20,
+      "effect": {
+        "type": "reputation_boost",
+        "value": 2
+      },
+      "weight": 6
+    },
+    {
+      "id": "ev_micro_05",
+      "titleKey": "ev.ev_micro_05.title",
+      "descKey": "ev.ev_micro_05.desc",
+      "durationMinutes": 45,
+      "effect": {
+        "type": "income_percent",
+        "value": -5.6
+      },
+      "weight": 5
+    },
+    {
+      "id": "ev_micro_06",
+      "titleKey": "ev.ev_micro_06.title",
+      "descKey": "ev.ev_micro_06.desc",
+      "durationMinutes": 15,
+      "effect": {
+        "type": "income_percent",
+        "value": -6.0
+      },
+      "weight": 2
+    },
+    {
+      "id": "ev_micro_07",
+      "titleKey": "ev.ev_micro_07.title",
+      "descKey": "ev.ev_micro_07.desc",
+      "durationMinutes": 60,
+      "effect": {
+        "type": "reputation_boost",
+        "value": 2
+      },
+      "weight": 6
+    },
+    {
+      "id": "ev_micro_08",
+      "titleKey": "ev.ev_micro_08.title",
+      "descKey": "ev.ev_micro_08.desc",
+      "durationMinutes": 45,
+      "effect": {
+        "type": "income_percent",
+        "value": 4.0
+      },
+      "weight": 4
+    },
+    {
+      "id": "ev_micro_09",
+      "titleKey": "ev.ev_micro_09.title",
+      "descKey": "ev.ev_micro_09.desc",
+      "durationMinutes": 45,
+      "effect": {
+        "type": "reputation_boost",
+        "value": 3
+      },
+      "weight": 2
+    },
+    {
+      "id": "ev_micro_10",
+      "titleKey": "ev.ev_micro_10.title",
+      "descKey": "ev.ev_micro_10.desc",
+      "durationMinutes": 60,
+      "effect": {
+        "type": "income_percent",
+        "value": -4.0
+      },
+      "weight": 5
+    },
+    {
+      "id": "ev_micro_11",
+      "titleKey": "ev.ev_micro_11.title",
+      "descKey": "ev.ev_micro_11.desc",
+      "durationMinutes": 15,
+      "effect": {
+        "type": "income_percent",
+        "value": 3.5
+      },
+      "weight": 2
+    },
+    {
+      "id": "ev_micro_12",
+      "titleKey": "ev.ev_micro_12.title",
+      "descKey": "ev.ev_micro_12.desc",
+      "durationMinutes": 20,
+      "effect": {
+        "type": "income_percent",
+        "value": 7.7
+      },
+      "weight": 5
+    },
+    {
+      "id": "ev_micro_13",
+      "titleKey": "ev.ev_micro_13.title",
+      "descKey": "ev.ev_micro_13.desc",
+      "durationMinutes": 15,
+      "effect": {
+        "type": "income_percent",
+        "value": -3.3
+      },
+      "weight": 3
+    },
+    {
+      "id": "ev_micro_14",
+      "titleKey": "ev.ev_micro_14.title",
+      "descKey": "ev.ev_micro_14.desc",
+      "durationMinutes": 60,
+      "effect": {
+        "type": "income_percent",
+        "value": 6.9
+      },
+      "weight": 2
+    },
+    {
+      "id": "ev_micro_15",
+      "titleKey": "ev.ev_micro_15.title",
+      "descKey": "ev.ev_micro_15.desc",
+      "durationMinutes": 20,
+      "effect": {
+        "type": "reputation_boost",
+        "value": 3
+      },
+      "weight": 4
+    },
+    {
+      "id": "ev_micro_16",
+      "titleKey": "ev.ev_micro_16.title",
+      "descKey": "ev.ev_micro_16.desc",
+      "durationMinutes": 30,
+      "effect": {
+        "type": "income_percent",
+        "value": -5.3
+      },
+      "weight": 5
+    },
+    {
+      "id": "ev_micro_17",
+      "titleKey": "ev.ev_micro_17.title",
+      "descKey": "ev.ev_micro_17.desc",
+      "durationMinutes": 15,
+      "effect": {
+        "type": "tm_bonus",
+        "value": 1000
+      },
+      "weight": 6
+    },
+    {
+      "id": "ev_micro_18",
+      "titleKey": "ev.ev_micro_18.title",
+      "descKey": "ev.ev_micro_18.desc",
+      "durationMinutes": 15,
+      "effect": {
+        "type": "income_percent",
+        "value": 6.0
+      },
+      "weight": 5
+    },
+    {
+      "id": "ev_micro_19",
+      "titleKey": "ev.ev_micro_19.title",
+      "descKey": "ev.ev_micro_19.desc",
+      "durationMinutes": 30,
+      "effect": {
+        "type": "income_percent",
+        "value": -3.4
+      },
+      "weight": 3
+    },
+    {
+      "id": "ev_micro_20",
+      "titleKey": "ev.ev_micro_20.title",
+      "descKey": "ev.ev_micro_20.desc",
+      "durationMinutes": 15,
+      "effect": {
+        "type": "income_percent",
+        "value": 4.8
+      },
+      "weight": 3
+    }
+  ]
+}

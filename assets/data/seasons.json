@@ -1,0 +1,2279 @@
+{
+  "dataVersion": "1.0.0",
+  "seasons": [
+    {
+      "id": "sn_1",
+      "nameKey": "sn.sn_1.name",
+      "descKey": "sn.sn_1.desc",
+      "weeksPerSeason": 6,
+      "seasonMultiplier": 0.95,
+      "freeTrack": {
+        "steps": [
+          {
+            "step": 1,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 1300
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 1200
+              }
+            ]
+          },
+          {
+            "step": 3,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 1300
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 4
+              }
+            ]
+          },
+          {
+            "step": 5,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 1000
+              }
+            ]
+          },
+          {
+            "step": 6,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 6
+              }
+            ]
+          },
+          {
+            "step": 7,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 1300
+              }
+            ]
+          },
+          {
+            "step": 8,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 5
+              }
+            ]
+          },
+          {
+            "step": 9,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 1500
+              }
+            ]
+          },
+          {
+            "step": 10,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_logo_05"
+              }
+            ]
+          },
+          {
+            "step": 11,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 1300
+              }
+            ]
+          },
+          {
+            "step": 12,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 6
+              }
+            ]
+          },
+          {
+            "step": 13,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 6
+              }
+            ]
+          },
+          {
+            "step": 14,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 1200
+              }
+            ]
+          },
+          {
+            "step": 15,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 1400
+              }
+            ]
+          },
+          {
+            "step": 16,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 7
+              }
+            ]
+          },
+          {
+            "step": 17,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 1400
+              }
+            ]
+          },
+          {
+            "step": 18,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 6
+              }
+            ]
+          },
+          {
+            "step": 19,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 7
+              }
+            ]
+          },
+          {
+            "step": 20,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_logo_05"
+              },
+              {
+                "type": "dp",
+                "amount": 7
+              }
+            ]
+          }
+        ]
+      },
+      "premiumTrack": {
+        "steps": [
+          {
+            "step": 1,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 3
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 3
+              }
+            ]
+          },
+          {
+            "step": 3,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 4
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 4
+              }
+            ]
+          },
+          {
+            "step": 5,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_title_18"
+              }
+            ]
+          },
+          {
+            "step": 6,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 5
+              }
+            ]
+          },
+          {
+            "step": 7,
+            "rewards": [
+              {
+                "type": "comfort",
+                "ref": "auto_collect_daily"
+              }
+            ]
+          },
+          {
+            "step": 8,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 5
+              }
+            ]
+          },
+          {
+            "step": 9,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 6
+              }
+            ]
+          },
+          {
+            "step": 10,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_title_17"
+              }
+            ]
+          },
+          {
+            "step": 11,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 6
+              }
+            ]
+          },
+          {
+            "step": 12,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 7
+              }
+            ]
+          },
+          {
+            "step": 13,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 7
+              }
+            ]
+          },
+          {
+            "step": 14,
+            "rewards": [
+              {
+                "type": "comfort",
+                "ref": "market_wishlist"
+              }
+            ]
+          },
+          {
+            "step": 15,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_title_18"
+              }
+            ]
+          },
+          {
+            "step": 16,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 8
+              }
+            ]
+          },
+          {
+            "step": 17,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 8
+              }
+            ]
+          },
+          {
+            "step": 18,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 9
+              }
+            ]
+          },
+          {
+            "step": 19,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 9
+              }
+            ]
+          },
+          {
+            "step": 20,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_title_17"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "sn_2",
+      "nameKey": "sn.sn_2.name",
+      "descKey": "sn.sn_2.desc",
+      "weeksPerSeason": 6,
+      "seasonMultiplier": 1.0,
+      "freeTrack": {
+        "steps": [
+          {
+            "step": 1,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 2400
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 2800
+              }
+            ]
+          },
+          {
+            "step": 3,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 3100
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 5
+              }
+            ]
+          },
+          {
+            "step": 5,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 2800
+              }
+            ]
+          },
+          {
+            "step": 6,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 7
+              }
+            ]
+          },
+          {
+            "step": 7,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 3100
+              }
+            ]
+          },
+          {
+            "step": 8,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 6
+              }
+            ]
+          },
+          {
+            "step": 9,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 3100
+              }
+            ]
+          },
+          {
+            "step": 10,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_logo_06"
+              }
+            ]
+          },
+          {
+            "step": 11,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 3000
+              }
+            ]
+          },
+          {
+            "step": 12,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 7
+              }
+            ]
+          },
+          {
+            "step": 13,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 7
+              }
+            ]
+          },
+          {
+            "step": 14,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 3100
+              }
+            ]
+          },
+          {
+            "step": 15,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 3300
+              }
+            ]
+          },
+          {
+            "step": 16,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 8
+              }
+            ]
+          },
+          {
+            "step": 17,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 3400
+              }
+            ]
+          },
+          {
+            "step": 18,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 7
+              }
+            ]
+          },
+          {
+            "step": 19,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 8
+              }
+            ]
+          },
+          {
+            "step": 20,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_logo_06"
+              },
+              {
+                "type": "dp",
+                "amount": 9
+              }
+            ]
+          }
+        ]
+      },
+      "premiumTrack": {
+        "steps": [
+          {
+            "step": 1,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 3
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 3
+              }
+            ]
+          },
+          {
+            "step": 3,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 4
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 4
+              }
+            ]
+          },
+          {
+            "step": 5,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_title_20"
+              }
+            ]
+          },
+          {
+            "step": 6,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 5
+              }
+            ]
+          },
+          {
+            "step": 7,
+            "rewards": [
+              {
+                "type": "comfort",
+                "ref": "auto_collect_daily"
+              }
+            ]
+          },
+          {
+            "step": 8,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 5
+              }
+            ]
+          },
+          {
+            "step": 9,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 6
+              }
+            ]
+          },
+          {
+            "step": 10,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_title_19"
+              }
+            ]
+          },
+          {
+            "step": 11,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 6
+              }
+            ]
+          },
+          {
+            "step": 12,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 7
+              }
+            ]
+          },
+          {
+            "step": 13,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 7
+              }
+            ]
+          },
+          {
+            "step": 14,
+            "rewards": [
+              {
+                "type": "comfort",
+                "ref": "market_wishlist"
+              }
+            ]
+          },
+          {
+            "step": 15,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_title_20"
+              }
+            ]
+          },
+          {
+            "step": 16,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 8
+              }
+            ]
+          },
+          {
+            "step": 17,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 8
+              }
+            ]
+          },
+          {
+            "step": 18,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 9
+              }
+            ]
+          },
+          {
+            "step": 19,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 9
+              }
+            ]
+          },
+          {
+            "step": 20,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_title_19"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "sn_3",
+      "nameKey": "sn.sn_3.name",
+      "descKey": "sn.sn_3.desc",
+      "weeksPerSeason": 6,
+      "seasonMultiplier": 1.05,
+      "freeTrack": {
+        "steps": [
+          {
+            "step": 1,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 6300
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 5700
+              }
+            ]
+          },
+          {
+            "step": 3,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 5400
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 6
+              }
+            ]
+          },
+          {
+            "step": 5,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 5700
+              }
+            ]
+          },
+          {
+            "step": 6,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 8
+              }
+            ]
+          },
+          {
+            "step": 7,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 6600
+              }
+            ]
+          },
+          {
+            "step": 8,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 7
+              }
+            ]
+          },
+          {
+            "step": 9,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 6100
+              }
+            ]
+          },
+          {
+            "step": 10,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_logo_07"
+              }
+            ]
+          },
+          {
+            "step": 11,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 7000
+              }
+            ]
+          },
+          {
+            "step": 12,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 8
+              }
+            ]
+          },
+          {
+            "step": 13,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 8
+              }
+            ]
+          },
+          {
+            "step": 14,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 6200
+              }
+            ]
+          },
+          {
+            "step": 15,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 5600
+              }
+            ]
+          },
+          {
+            "step": 16,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 9
+              }
+            ]
+          },
+          {
+            "step": 17,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 7400
+              }
+            ]
+          },
+          {
+            "step": 18,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 8
+              }
+            ]
+          },
+          {
+            "step": 19,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 9
+              }
+            ]
+          },
+          {
+            "step": 20,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_logo_07"
+              },
+              {
+                "type": "dp",
+                "amount": 11
+              }
+            ]
+          }
+        ]
+      },
+      "premiumTrack": {
+        "steps": [
+          {
+            "step": 1,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 3
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 3
+              }
+            ]
+          },
+          {
+            "step": 3,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 4
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 4
+              }
+            ]
+          },
+          {
+            "step": 5,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_title_22"
+              }
+            ]
+          },
+          {
+            "step": 6,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 5
+              }
+            ]
+          },
+          {
+            "step": 7,
+            "rewards": [
+              {
+                "type": "comfort",
+                "ref": "auto_collect_daily"
+              }
+            ]
+          },
+          {
+            "step": 8,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 5
+              }
+            ]
+          },
+          {
+            "step": 9,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 6
+              }
+            ]
+          },
+          {
+            "step": 10,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_title_21"
+              }
+            ]
+          },
+          {
+            "step": 11,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 6
+              }
+            ]
+          },
+          {
+            "step": 12,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 7
+              }
+            ]
+          },
+          {
+            "step": 13,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 7
+              }
+            ]
+          },
+          {
+            "step": 14,
+            "rewards": [
+              {
+                "type": "comfort",
+                "ref": "market_wishlist"
+              }
+            ]
+          },
+          {
+            "step": 15,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_title_22"
+              }
+            ]
+          },
+          {
+            "step": 16,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 8
+              }
+            ]
+          },
+          {
+            "step": 17,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 8
+              }
+            ]
+          },
+          {
+            "step": 18,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 9
+              }
+            ]
+          },
+          {
+            "step": 19,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 9
+              }
+            ]
+          },
+          {
+            "step": 20,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_title_21"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "sn_4",
+      "nameKey": "sn.sn_4.name",
+      "descKey": "sn.sn_4.desc",
+      "weeksPerSeason": 6,
+      "seasonMultiplier": 1.1,
+      "freeTrack": {
+        "steps": [
+          {
+            "step": 1,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 12200
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 15900
+              }
+            ]
+          },
+          {
+            "step": 3,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 15200
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 7
+              }
+            ]
+          },
+          {
+            "step": 5,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 15100
+              }
+            ]
+          },
+          {
+            "step": 6,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 9
+              }
+            ]
+          },
+          {
+            "step": 7,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 12100
+              }
+            ]
+          },
+          {
+            "step": 8,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 8
+              }
+            ]
+          },
+          {
+            "step": 9,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 14800
+              }
+            ]
+          },
+          {
+            "step": 10,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_hq_05"
+              }
+            ]
+          },
+          {
+            "step": 11,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 11700
+              }
+            ]
+          },
+          {
+            "step": 12,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 9
+              }
+            ]
+          },
+          {
+            "step": 13,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 9
+              }
+            ]
+          },
+          {
+            "step": 14,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 13200
+              }
+            ]
+          },
+          {
+            "step": 15,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 13900
+              }
+            ]
+          },
+          {
+            "step": 16,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 10
+              }
+            ]
+          },
+          {
+            "step": 17,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 15200
+              }
+            ]
+          },
+          {
+            "step": 18,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 9
+              }
+            ]
+          },
+          {
+            "step": 19,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 10
+              }
+            ]
+          },
+          {
+            "step": 20,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_hq_05"
+              },
+              {
+                "type": "dp",
+                "amount": 13
+              }
+            ]
+          }
+        ]
+      },
+      "premiumTrack": {
+        "steps": [
+          {
+            "step": 1,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 3
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 3
+              }
+            ]
+          },
+          {
+            "step": 3,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 4
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 4
+              }
+            ]
+          },
+          {
+            "step": 5,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_title_24"
+              }
+            ]
+          },
+          {
+            "step": 6,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 5
+              }
+            ]
+          },
+          {
+            "step": 7,
+            "rewards": [
+              {
+                "type": "comfort",
+                "ref": "auto_collect_daily"
+              }
+            ]
+          },
+          {
+            "step": 8,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 5
+              }
+            ]
+          },
+          {
+            "step": 9,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 6
+              }
+            ]
+          },
+          {
+            "step": 10,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_title_23"
+              }
+            ]
+          },
+          {
+            "step": 11,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 6
+              }
+            ]
+          },
+          {
+            "step": 12,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 7
+              }
+            ]
+          },
+          {
+            "step": 13,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 7
+              }
+            ]
+          },
+          {
+            "step": 14,
+            "rewards": [
+              {
+                "type": "comfort",
+                "ref": "market_wishlist"
+              }
+            ]
+          },
+          {
+            "step": 15,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_title_24"
+              }
+            ]
+          },
+          {
+            "step": 16,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 8
+              }
+            ]
+          },
+          {
+            "step": 17,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 8
+              }
+            ]
+          },
+          {
+            "step": 18,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 9
+              }
+            ]
+          },
+          {
+            "step": 19,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 9
+              }
+            ]
+          },
+          {
+            "step": 20,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_title_23"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "sn_5",
+      "nameKey": "sn.sn_5.name",
+      "descKey": "sn.sn_5.desc",
+      "weeksPerSeason": 6,
+      "seasonMultiplier": 1.2,
+      "freeTrack": {
+        "steps": [
+          {
+            "step": 1,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 26800
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 32900
+              }
+            ]
+          },
+          {
+            "step": 3,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 30300
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 8
+              }
+            ]
+          },
+          {
+            "step": 5,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 26600
+              }
+            ]
+          },
+          {
+            "step": 6,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 10
+              }
+            ]
+          },
+          {
+            "step": 7,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 34600
+              }
+            ]
+          },
+          {
+            "step": 8,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 9
+              }
+            ]
+          },
+          {
+            "step": 9,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 30500
+              }
+            ]
+          },
+          {
+            "step": 10,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_hq_06"
+              }
+            ]
+          },
+          {
+            "step": 11,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 28900
+              }
+            ]
+          },
+          {
+            "step": 12,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 10
+              }
+            ]
+          },
+          {
+            "step": 13,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 10
+              }
+            ]
+          },
+          {
+            "step": 14,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 31000
+              }
+            ]
+          },
+          {
+            "step": 15,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 32300
+              }
+            ]
+          },
+          {
+            "step": 16,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 11
+              }
+            ]
+          },
+          {
+            "step": 17,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 29300
+              }
+            ]
+          },
+          {
+            "step": 18,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 10
+              }
+            ]
+          },
+          {
+            "step": 19,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 11
+              }
+            ]
+          },
+          {
+            "step": 20,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_hq_06"
+              },
+              {
+                "type": "dp",
+                "amount": 15
+              }
+            ]
+          }
+        ]
+      },
+      "premiumTrack": {
+        "steps": [
+          {
+            "step": 1,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 3
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 3
+              }
+            ]
+          },
+          {
+            "step": 3,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 4
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 4
+              }
+            ]
+          },
+          {
+            "step": 5,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_hq_04"
+              }
+            ]
+          },
+          {
+            "step": 6,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 5
+              }
+            ]
+          },
+          {
+            "step": 7,
+            "rewards": [
+              {
+                "type": "comfort",
+                "ref": "auto_collect_daily"
+              }
+            ]
+          },
+          {
+            "step": 8,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 5
+              }
+            ]
+          },
+          {
+            "step": 9,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 6
+              }
+            ]
+          },
+          {
+            "step": 10,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_hq_03"
+              }
+            ]
+          },
+          {
+            "step": 11,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 6
+              }
+            ]
+          },
+          {
+            "step": 12,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 7
+              }
+            ]
+          },
+          {
+            "step": 13,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 7
+              }
+            ]
+          },
+          {
+            "step": 14,
+            "rewards": [
+              {
+                "type": "comfort",
+                "ref": "market_wishlist"
+              }
+            ]
+          },
+          {
+            "step": 15,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_hq_04"
+              }
+            ]
+          },
+          {
+            "step": 16,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 8
+              }
+            ]
+          },
+          {
+            "step": 17,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 8
+              }
+            ]
+          },
+          {
+            "step": 18,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 9
+              }
+            ]
+          },
+          {
+            "step": 19,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 9
+              }
+            ]
+          },
+          {
+            "step": 20,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_hq_03"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "sn_6",
+      "nameKey": "sn.sn_6.name",
+      "descKey": "sn.sn_6.desc",
+      "weeksPerSeason": 6,
+      "seasonMultiplier": 1.25,
+      "freeTrack": {
+        "steps": [
+          {
+            "step": 1,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 59200
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 66200
+              }
+            ]
+          },
+          {
+            "step": 3,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 55500
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 9
+              }
+            ]
+          },
+          {
+            "step": 5,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 72000
+              }
+            ]
+          },
+          {
+            "step": 6,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 11
+              }
+            ]
+          },
+          {
+            "step": 7,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 61400
+              }
+            ]
+          },
+          {
+            "step": 8,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 10
+              }
+            ]
+          },
+          {
+            "step": 9,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 76100
+              }
+            ]
+          },
+          {
+            "step": 10,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_logo_08"
+              }
+            ]
+          },
+          {
+            "step": 11,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 72200
+              }
+            ]
+          },
+          {
+            "step": 12,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 11
+              }
+            ]
+          },
+          {
+            "step": 13,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 11
+              }
+            ]
+          },
+          {
+            "step": 14,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 61300
+              }
+            ]
+          },
+          {
+            "step": 15,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 63700
+              }
+            ]
+          },
+          {
+            "step": 16,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 12
+              }
+            ]
+          },
+          {
+            "step": 17,
+            "rewards": [
+              {
+                "type": "tm",
+                "amount": 55000
+              }
+            ]
+          },
+          {
+            "step": 18,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 11
+              }
+            ]
+          },
+          {
+            "step": 19,
+            "rewards": [
+              {
+                "type": "dp",
+                "amount": 12
+              }
+            ]
+          },
+          {
+            "step": 20,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_logo_08"
+              },
+              {
+                "type": "dp",
+                "amount": 17
+              }
+            ]
+          }
+        ]
+      },
+      "premiumTrack": {
+        "steps": [
+          {
+            "step": 1,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 3
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 3
+              }
+            ]
+          },
+          {
+            "step": 3,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 4
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 4
+              }
+            ]
+          },
+          {
+            "step": 5,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_logo_04"
+              }
+            ]
+          },
+          {
+            "step": 6,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 5
+              }
+            ]
+          },
+          {
+            "step": 7,
+            "rewards": [
+              {
+                "type": "comfort",
+                "ref": "auto_collect_daily"
+              }
+            ]
+          },
+          {
+            "step": 8,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 5
+              }
+            ]
+          },
+          {
+            "step": 9,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 6
+              }
+            ]
+          },
+          {
+            "step": 10,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_logo_03"
+              }
+            ]
+          },
+          {
+            "step": 11,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 6
+              }
+            ]
+          },
+          {
+            "step": 12,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 7
+              }
+            ]
+          },
+          {
+            "step": 13,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 7
+              }
+            ]
+          },
+          {
+            "step": 14,
+            "rewards": [
+              {
+                "type": "comfort",
+                "ref": "market_wishlist"
+              }
+            ]
+          },
+          {
+            "step": 15,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_logo_04"
+              }
+            ]
+          },
+          {
+            "step": 16,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 8
+              }
+            ]
+          },
+          {
+            "step": 17,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 8
+              }
+            ]
+          },
+          {
+            "step": 18,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 9
+              }
+            ]
+          },
+          {
+            "step": 19,
+            "rewards": [
+              {
+                "type": "km",
+                "amount": 9
+              }
+            ]
+          },
+          {
+            "step": 20,
+            "rewards": [
+              {
+                "type": "cosmetic",
+                "ref": "cs_logo_03"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,455 @@
+{
+  "dataVersion": "1.0.0",
+  "milestones": [
+    {
+      "id": "ms_first_purchase",
+      "core": true,
+      "nameKey": "ms.ms_first_purchase.name",
+      "descKey": "ms.ms_first_purchase.desc",
+      "goal": {
+        "type": "companies_owned",
+        "value": 1,
+        "sector": null
+      },
+      "reward": {
+        "dp": 10,
+        "cosmeticRef": "cs_title_01"
+      }
+    },
+    {
+      "id": "ms_two_sectors",
+      "core": true,
+      "nameKey": "ms.ms_two_sectors.name",
+      "descKey": "ms.ms_two_sectors.desc",
+      "goal": {
+        "type": "sectors_active",
+        "value": 2,
+        "sector": null
+      },
+      "reward": {
+        "dp": 15,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_rep_60",
+      "core": true,
+      "nameKey": "ms.ms_rep_60.name",
+      "descKey": "ms.ms_rep_60.desc",
+      "goal": {
+        "type": "reputation",
+        "value": 60,
+        "sector": null
+      },
+      "reward": {
+        "dp": 25,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_sector_mastery",
+      "core": true,
+      "nameKey": "ms.ms_sector_mastery.name",
+      "descKey": "ms.ms_sector_mastery.desc",
+      "goal": {
+        "type": "sector_mastery",
+        "value": 1,
+        "sector": "app"
+      },
+      "reward": {
+        "dp": 30,
+        "cosmeticRef": "cs_title_04"
+      }
+    },
+    {
+      "id": "ms_dual_tier_empire",
+      "core": true,
+      "nameKey": "ms.ms_dual_tier_empire.name",
+      "descKey": "ms.ms_dual_tier_empire.desc",
+      "goal": {
+        "type": "dual_tier_empire",
+        "value": 1,
+        "sector": null
+      },
+      "reward": {
+        "dp": 40,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_tier_8",
+      "core": true,
+      "nameKey": "ms.ms_tier_8.name",
+      "descKey": "ms.ms_tier_8.desc",
+      "goal": {
+        "type": "tier_reached",
+        "value": 8,
+        "sector": null
+      },
+      "reward": {
+        "dp": 100,
+        "cosmeticRef": "cs_title_08"
+      }
+    },
+    {
+      "id": "ms_auctions_5",
+      "core": false,
+      "nameKey": "ms.ms_auctions_5.name",
+      "descKey": "ms.ms_auctions_5.desc",
+      "goal": {
+        "type": "auctions_won",
+        "value": 5,
+        "sector": null
+      },
+      "reward": {
+        "dp": 10,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_auctions_15",
+      "core": false,
+      "nameKey": "ms.ms_auctions_15.name",
+      "descKey": "ms.ms_auctions_15.desc",
+      "goal": {
+        "type": "auctions_won",
+        "value": 15,
+        "sector": null
+      },
+      "reward": {
+        "dp": 20,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_auctions_40",
+      "core": false,
+      "nameKey": "ms.ms_auctions_40.name",
+      "descKey": "ms.ms_auctions_40.desc",
+      "goal": {
+        "type": "auctions_won",
+        "value": 40,
+        "sector": null
+      },
+      "reward": {
+        "dp": 35,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_companies_5",
+      "core": false,
+      "nameKey": "ms.ms_companies_5.name",
+      "descKey": "ms.ms_companies_5.desc",
+      "goal": {
+        "type": "companies_owned",
+        "value": 5,
+        "sector": null
+      },
+      "reward": {
+        "dp": 10,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_companies_15",
+      "core": false,
+      "nameKey": "ms.ms_companies_15.name",
+      "descKey": "ms.ms_companies_15.desc",
+      "goal": {
+        "type": "companies_owned",
+        "value": 15,
+        "sector": null
+      },
+      "reward": {
+        "dp": 15,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_companies_30",
+      "core": false,
+      "nameKey": "ms.ms_companies_30.name",
+      "descKey": "ms.ms_companies_30.desc",
+      "goal": {
+        "type": "companies_owned",
+        "value": 30,
+        "sector": null
+      },
+      "reward": {
+        "dp": 25,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_companies_50",
+      "core": false,
+      "nameKey": "ms.ms_companies_50.name",
+      "descKey": "ms.ms_companies_50.desc",
+      "goal": {
+        "type": "companies_owned",
+        "value": 50,
+        "sector": null
+      },
+      "reward": {
+        "dp": 40,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_upgrades_25",
+      "core": false,
+      "nameKey": "ms.ms_upgrades_25.name",
+      "descKey": "ms.ms_upgrades_25.desc",
+      "goal": {
+        "type": "operations_upgraded",
+        "value": 25,
+        "sector": null
+      },
+      "reward": {
+        "dp": 10,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_upgrades_100",
+      "core": false,
+      "nameKey": "ms.ms_upgrades_100.name",
+      "descKey": "ms.ms_upgrades_100.desc",
+      "goal": {
+        "type": "operations_upgraded",
+        "value": 100,
+        "sector": null
+      },
+      "reward": {
+        "dp": 20,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_upgrades_300",
+      "core": false,
+      "nameKey": "ms.ms_upgrades_300.name",
+      "descKey": "ms.ms_upgrades_300.desc",
+      "goal": {
+        "type": "operations_upgraded",
+        "value": 300,
+        "sector": null
+      },
+      "reward": {
+        "dp": 35,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_staff_5",
+      "core": false,
+      "nameKey": "ms.ms_staff_5.name",
+      "descKey": "ms.ms_staff_5.desc",
+      "goal": {
+        "type": "staff_hired",
+        "value": 5,
+        "sector": null
+      },
+      "reward": {
+        "dp": 8,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_staff_15",
+      "core": false,
+      "nameKey": "ms.ms_staff_15.name",
+      "descKey": "ms.ms_staff_15.desc",
+      "goal": {
+        "type": "staff_hired",
+        "value": 15,
+        "sector": null
+      },
+      "reward": {
+        "dp": 15,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_research_4",
+      "core": false,
+      "nameKey": "ms.ms_research_4.name",
+      "descKey": "ms.ms_research_4.desc",
+      "goal": {
+        "type": "research_completed",
+        "value": 4,
+        "sector": null
+      },
+      "reward": {
+        "dp": 10,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_research_8",
+      "core": false,
+      "nameKey": "ms.ms_research_8.name",
+      "descKey": "ms.ms_research_8.desc",
+      "goal": {
+        "type": "research_completed",
+        "value": 8,
+        "sector": null
+      },
+      "reward": {
+        "dp": 20,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_research_12",
+      "core": false,
+      "nameKey": "ms.ms_research_12.name",
+      "descKey": "ms.ms_research_12.desc",
+      "goal": {
+        "type": "research_completed",
+        "value": 12,
+        "sector": null
+      },
+      "reward": {
+        "dp": 30,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_contracts_10",
+      "core": false,
+      "nameKey": "ms.ms_contracts_10.name",
+      "descKey": "ms.ms_contracts_10.desc",
+      "goal": {
+        "type": "contracts_completed",
+        "value": 10,
+        "sector": null
+      },
+      "reward": {
+        "dp": 10,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_contracts_40",
+      "core": false,
+      "nameKey": "ms.ms_contracts_40.name",
+      "descKey": "ms.ms_contracts_40.desc",
+      "goal": {
+        "type": "contracts_completed",
+        "value": 40,
+        "sector": null
+      },
+      "reward": {
+        "dp": 20,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_contracts_100",
+      "core": false,
+      "nameKey": "ms.ms_contracts_100.name",
+      "descKey": "ms.ms_contracts_100.desc",
+      "goal": {
+        "type": "contracts_completed",
+        "value": 100,
+        "sector": null
+      },
+      "reward": {
+        "dp": 35,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_seasons_1",
+      "core": false,
+      "nameKey": "ms.ms_seasons_1.name",
+      "descKey": "ms.ms_seasons_1.desc",
+      "goal": {
+        "type": "seasons_played",
+        "value": 1,
+        "sector": null
+      },
+      "reward": {
+        "dp": 10,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_seasons_3",
+      "core": false,
+      "nameKey": "ms.ms_seasons_3.name",
+      "descKey": "ms.ms_seasons_3.desc",
+      "goal": {
+        "type": "seasons_played",
+        "value": 3,
+        "sector": null
+      },
+      "reward": {
+        "dp": 20,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_cosmetics_3",
+      "core": false,
+      "nameKey": "ms.ms_cosmetics_3.name",
+      "descKey": "ms.ms_cosmetics_3.desc",
+      "goal": {
+        "type": "cosmetics_owned",
+        "value": 3,
+        "sector": null
+      },
+      "reward": {
+        "dp": 8,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_cosmetics_10",
+      "core": false,
+      "nameKey": "ms.ms_cosmetics_10.name",
+      "descKey": "ms.ms_cosmetics_10.desc",
+      "goal": {
+        "type": "cosmetics_owned",
+        "value": 10,
+        "sector": null
+      },
+      "reward": {
+        "dp": 15,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_rep_30",
+      "core": false,
+      "nameKey": "ms.ms_rep_30.name",
+      "descKey": "ms.ms_rep_30.desc",
+      "goal": {
+        "type": "reputation",
+        "value": 30,
+        "sector": null
+      },
+      "reward": {
+        "dp": 8,
+        "cosmeticRef": null
+      }
+    },
+    {
+      "id": "ms_rep_90",
+      "core": false,
+      "nameKey": "ms.ms_rep_90.name",
+      "descKey": "ms.ms_rep_90.desc",
+      "goal": {
+        "type": "reputation",
+        "value": 90,
+        "sector": null
+      },
+      "reward": {
+        "dp": 25,
+        "cosmeticRef": null
+      }
+    }
+  ]
+}

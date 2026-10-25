@@ -1,0 +1,107 @@
+{
+  "dataVersion": "1.0.0",
+  "steps": [
+    {
+      "step": 1,
+      "id": "tu_step_01",
+      "titleKey": "tu.tu_step_01.title",
+      "descKey": "tu.tu_step_01.desc",
+      "uiElement": "naming_screen",
+      "requiredAction": "enter_name_and_sector",
+      "rewardTM": 2000
+    },
+    {
+      "step": 2,
+      "id": "tu_step_02",
+      "titleKey": "tu.tu_step_02.title",
+      "descKey": "tu.tu_step_02.desc",
+      "uiElement": "op_card_first",
+      "requiredAction": "tap_operation",
+      "rewardTM": 1000
+    },
+    {
+      "step": 3,
+      "id": "tu_step_03",
+      "titleKey": "tu.tu_step_03.title",
+      "descKey": "tu.tu_step_03.desc",
+      "uiElement": "collect_button",
+      "requiredAction": "tap_collect",
+      "rewardTM": 1000
+    },
+    {
+      "step": 4,
+      "id": "tu_step_04",
+      "titleKey": "tu.tu_step_04.title",
+      "descKey": "tu.tu_step_04.desc",
+      "uiElement": "staff_screen",
+      "requiredAction": "hire_staff",
+      "rewardTM": 1500
+    },
+    {
+      "step": 5,
+      "id": "tu_step_05",
+      "titleKey": "tu.tu_step_05.title",
+      "descKey": "tu.tu_step_05.desc",
+      "uiElement": "op_upgrade_button",
+      "requiredAction": "upgrade_to_level_2",
+      "rewardTM": 2000
+    },
+    {
+      "step": 6,
+      "id": "tu_step_06",
+      "titleKey": "tu.tu_step_06.title",
+      "descKey": "tu.tu_step_06.desc",
+      "uiElement": "market_button",
+      "requiredAction": "open_market",
+      "rewardTM": 0
+    },
+    {
+      "step": 7,
+      "id": "tu_step_07",
+      "titleKey": "tu.tu_step_07.title",
+      "descKey": "tu.tu_step_07.desc",
+      "uiElement": "auction_bid_button",
+      "requiredAction": "buy_first_company",
+      "rewardTM": 0
+    },
+    {
+      "step": 8,
+      "id": "tu_step_08",
+      "titleKey": "tu.tu_step_08.title",
+      "descKey": "tu.tu_step_08.desc",
+      "uiElement": "tier_screen",
+      "requiredAction": "view_tier_up",
+      "rewardTM": 0
+    },
+    {
+      "step": 9,
+      "id": "tu_step_09",
+      "titleKey": "tu.tu_step_09.title",
+      "descKey": "tu.tu_step_09.desc",
+      "uiElement": "pitch_button",
+      "requiredAction": "complete_pitch",
+      "rewardTM": 0
+    },
+    {
+      "step": 10,
+      "id": "tu_step_10",
+      "titleKey": "tu.tu_step_10.title",
+      "descKey": "tu.tu_step_10.desc",
+      "uiElement": "weekly_card",
+      "requiredAction": "view_weekly_target",
+      "rewardTM": 0
+    }
+  ],
+  "starterGrant": {
+    "tm": 50000,
+    "noteKey": "tu.starter.note"
+  },
+  "starterTarget": {
+    "special": true,
+    "featuredTier": 1,
+    "maxStartPriceTM": 45000,
+    "noAiBidsMinutes": 8,
+    "firstPurchaseWithinMinutes": 8,
+    "noteKey": "tu.starter.note"
+  }
+}

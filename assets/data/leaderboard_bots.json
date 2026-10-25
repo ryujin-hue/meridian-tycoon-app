@@ -1,0 +1,720 @@
+{
+  "dataVersion": "1.0.0",
+  "leagueSize": 30,
+  "bots": [
+    {
+      "id": "lb_bot_01",
+      "nameKey": "lb.bot.01.name",
+      "tier": 1,
+      "weeklyScoreBase": 43600,
+      "weeklyScoreVariance": 8900,
+      "style": "sniper"
+    },
+    {
+      "id": "lb_bot_02",
+      "nameKey": "lb.bot.02.name",
+      "tier": 1,
+      "weeklyScoreBase": 37300,
+      "weeklyScoreVariance": 10900,
+      "style": "diversifier"
+    },
+    {
+      "id": "lb_bot_03",
+      "nameKey": "lb.bot.03.name",
+      "tier": 2,
+      "weeklyScoreBase": 72500,
+      "weeklyScoreVariance": 12200,
+      "style": "steady"
+    },
+    {
+      "id": "lb_bot_04",
+      "nameKey": "lb.bot.04.name",
+      "tier": 2,
+      "weeklyScoreBase": 102800,
+      "weeklyScoreVariance": 23900,
+      "style": "aggressive"
+    },
+    {
+      "id": "lb_bot_05",
+      "nameKey": "lb.bot.05.name",
+      "tier": 2,
+      "weeklyScoreBase": 88100,
+      "weeklyScoreVariance": 16100,
+      "style": "sniper"
+    },
+    {
+      "id": "lb_bot_06",
+      "nameKey": "lb.bot.06.name",
+      "tier": 3,
+      "weeklyScoreBase": 168000,
+      "weeklyScoreVariance": 43200,
+      "style": "diversifier"
+    },
+    {
+      "id": "lb_bot_07",
+      "nameKey": "lb.bot.07.name",
+      "tier": 3,
+      "weeklyScoreBase": 237400,
+      "weeklyScoreVariance": 70800,
+      "style": "steady"
+    },
+    {
+      "id": "lb_bot_08",
+      "nameKey": "lb.bot.08.name",
+      "tier": 3,
+      "weeklyScoreBase": 203800,
+      "weeklyScoreVariance": 33600,
+      "style": "aggressive"
+    },
+    {
+      "id": "lb_bot_09",
+      "nameKey": "lb.bot.09.name",
+      "tier": 3,
+      "weeklyScoreBase": 170200,
+      "weeklyScoreVariance": 44500,
+      "style": "sniper"
+    },
+    {
+      "id": "lb_bot_10",
+      "nameKey": "lb.bot.10.name",
+      "tier": 4,
+      "weeklyScoreBase": 561700,
+      "weeklyScoreVariance": 111100,
+      "style": "diversifier"
+    },
+    {
+      "id": "lb_bot_11",
+      "nameKey": "lb.bot.11.name",
+      "tier": 4,
+      "weeklyScoreBase": 482900,
+      "weeklyScoreVariance": 74100,
+      "style": "steady"
+    },
+    {
+      "id": "lb_bot_12",
+      "nameKey": "lb.bot.12.name",
+      "tier": 4,
+      "weeklyScoreBase": 404200,
+      "weeklyScoreVariance": 78600,
+      "style": "aggressive"
+    },
+    {
+      "id": "lb_bot_13",
+      "nameKey": "lb.bot.13.name",
+      "tier": 4,
+      "weeklyScoreBase": 567000,
+      "weeklyScoreVariance": 120500,
+      "style": "sniper"
+    },
+    {
+      "id": "lb_bot_14",
+      "nameKey": "lb.bot.14.name",
+      "tier": 5,
+      "weeklyScoreBase": 1106700,
+      "weeklyScoreVariance": 284600,
+      "style": "diversifier"
+    },
+    {
+      "id": "lb_bot_15",
+      "nameKey": "lb.bot.15.name",
+      "tier": 5,
+      "weeklyScoreBase": 928100,
+      "weeklyScoreVariance": 196900,
+      "style": "steady"
+    },
+    {
+      "id": "lb_bot_16",
+      "nameKey": "lb.bot.16.name",
+      "tier": 5,
+      "weeklyScoreBase": 1297000,
+      "weeklyScoreVariance": 299500,
+      "style": "aggressive"
+    },
+    {
+      "id": "lb_bot_17",
+      "nameKey": "lb.bot.17.name",
+      "tier": 5,
+      "weeklyScoreBase": 1118600,
+      "weeklyScoreVariance": 333700,
+      "style": "sniper"
+    },
+    {
+      "id": "lb_bot_18",
+      "nameKey": "lb.bot.18.name",
+      "tier": 5,
+      "weeklyScoreBase": 940000,
+      "weeklyScoreVariance": 191200,
+      "style": "diversifier"
+    },
+    {
+      "id": "lb_bot_19",
+      "nameKey": "lb.bot.19.name",
+      "tier": 6,
+      "weeklyScoreBase": 3080000,
+      "weeklyScoreVariance": 651500,
+      "style": "steady"
+    },
+    {
+      "id": "lb_bot_20",
+      "nameKey": "lb.bot.20.name",
+      "tier": 6,
+      "weeklyScoreBase": 2660000,
+      "weeklyScoreVariance": 664000,
+      "style": "aggressive"
+    },
+    {
+      "id": "lb_bot_21",
+      "nameKey": "lb.bot.21.name",
+      "tier": 6,
+      "weeklyScoreBase": 2240000,
+      "weeklyScoreVariance": 630700,
+      "style": "sniper"
+    },
+    {
+      "id": "lb_bot_22",
+      "nameKey": "lb.bot.22.name",
+      "tier": 6,
+      "weeklyScoreBase": 3107900,
+      "weeklyScoreVariance": 473300,
+      "style": "diversifier"
+    },
+    {
+      "id": "lb_bot_23",
+      "nameKey": "lb.bot.23.name",
+      "tier": 7,
+      "weeklyScoreBase": 6384000,
+      "weeklyScoreVariance": 1160200,
+      "style": "steady"
+    },
+    {
+      "id": "lb_bot_24",
+      "nameKey": "lb.bot.24.name",
+      "tier": 7,
+      "weeklyScoreBase": 5386500,
+      "weeklyScoreVariance": 1485000,
+      "style": "aggressive"
+    },
+    {
+      "id": "lb_bot_25",
+      "nameKey": "lb.bot.25.name",
+      "tier": 7,
+      "weeklyScoreBase": 7447900,
+      "weeklyScoreVariance": 1468500,
+      "style": "sniper"
+    },
+    {
+      "id": "lb_bot_26",
+      "nameKey": "lb.bot.26.name",
+      "tier": 7,
+      "weeklyScoreBase": 6450500,
+      "weeklyScoreVariance": 1633000,
+      "style": "diversifier"
+    },
+    {
+      "id": "lb_bot_27",
+      "nameKey": "lb.bot.27.name",
+      "tier": 8,
+      "weeklyScoreBase": 12628000,
+      "weeklyScoreVariance": 2125700,
+      "style": "steady"
+    },
+    {
+      "id": "lb_bot_28",
+      "nameKey": "lb.bot.28.name",
+      "tier": 8,
+      "weeklyScoreBase": 17402000,
+      "weeklyScoreVariance": 3053000,
+      "style": "aggressive"
+    },
+    {
+      "id": "lb_bot_29",
+      "nameKey": "lb.bot.29.name",
+      "tier": 8,
+      "weeklyScoreBase": 15092000,
+      "weeklyScoreVariance": 4465200,
+      "style": "sniper"
+    }
+  ],
+  "namePool": [
+    {
+      "index": 1,
+      "nameKey": "lb.pool.001"
+    },
+    {
+      "index": 2,
+      "nameKey": "lb.pool.002"
+    },
+    {
+      "index": 3,
+      "nameKey": "lb.pool.003"
+    },
+    {
+      "index": 4,
+      "nameKey": "lb.pool.004"
+    },
+    {
+      "index": 5,
+      "nameKey": "lb.pool.005"
+    },
+    {
+      "index": 6,
+      "nameKey": "lb.pool.006"
+    },
+    {
+      "index": 7,
+      "nameKey": "lb.pool.007"
+    },
+    {
+      "index": 8,
+      "nameKey": "lb.pool.008"
+    },
+    {
+      "index": 9,
+      "nameKey": "lb.pool.009"
+    },
+    {
+      "index": 10,
+      "nameKey": "lb.pool.010"
+    },
+    {
+      "index": 11,
+      "nameKey": "lb.pool.011"
+    },
+    {
+      "index": 12,
+      "nameKey": "lb.pool.012"
+    },
+    {
+      "index": 13,
+      "nameKey": "lb.pool.013"
+    },
+    {
+      "index": 14,
+      "nameKey": "lb.pool.014"
+    },
+    {
+      "index": 15,
+      "nameKey": "lb.pool.015"
+    },
+    {
+      "index": 16,
+      "nameKey": "lb.pool.016"
+    },
+    {
+      "index": 17,
+      "nameKey": "lb.pool.017"
+    },
+    {
+      "index": 18,
+      "nameKey": "lb.pool.018"
+    },
+    {
+      "index": 19,
+      "nameKey": "lb.pool.019"
+    },
+    {
+      "index": 20,
+      "nameKey": "lb.pool.020"
+    },
+    {
+      "index": 21,
+      "nameKey": "lb.pool.021"
+    },
+    {
+      "index": 22,
+      "nameKey": "lb.pool.022"
+    },
+    {
+      "index": 23,
+      "nameKey": "lb.pool.023"
+    },
+    {
+      "index": 24,
+      "nameKey": "lb.pool.024"
+    },
+    {
+      "index": 25,
+      "nameKey": "lb.pool.025"
+    },
+    {
+      "index": 26,
+      "nameKey": "lb.pool.026"
+    },
+    {
+      "index": 27,
+      "nameKey": "lb.pool.027"
+    },
+    {
+      "index": 28,
+      "nameKey": "lb.pool.028"
+    },
+    {
+      "index": 29,
+      "nameKey": "lb.pool.029"
+    },
+    {
+      "index": 30,
+      "nameKey": "lb.pool.030"
+    },
+    {
+      "index": 31,
+      "nameKey": "lb.pool.031"
+    },
+    {
+      "index": 32,
+      "nameKey": "lb.pool.032"
+    },
+    {
+      "index": 33,
+      "nameKey": "lb.pool.033"
+    },
+    {
+      "index": 34,
+      "nameKey": "lb.pool.034"
+    },
+    {
+      "index": 35,
+      "nameKey": "lb.pool.035"
+    },
+    {
+      "index": 36,
+      "nameKey": "lb.pool.036"
+    },
+    {
+      "index": 37,
+      "nameKey": "lb.pool.037"
+    },
+    {
+      "index": 38,
+      "nameKey": "lb.pool.038"
+    },
+    {
+      "index": 39,
+      "nameKey": "lb.pool.039"
+    },
+    {
+      "index": 40,
+      "nameKey": "lb.pool.040"
+    },
+    {
+      "index": 41,
+      "nameKey": "lb.pool.041"
+    },
+    {
+      "index": 42,
+      "nameKey": "lb.pool.042"
+    },
+    {
+      "index": 43,
+      "nameKey": "lb.pool.043"
+    },
+    {
+      "index": 44,
+      "nameKey": "lb.pool.044"
+    },
+    {
+      "index": 45,
+      "nameKey": "lb.pool.045"
+    },
+    {
+      "index": 46,
+      "nameKey": "lb.pool.046"
+    },
+    {
+      "index": 47,
+      "nameKey": "lb.pool.047"
+    },
+    {
+      "index": 48,
+      "nameKey": "lb.pool.048"
+    },
+    {
+      "index": 49,
+      "nameKey": "lb.pool.049"
+    },
+    {
+      "index": 50,
+      "nameKey": "lb.pool.050"
+    },
+    {
+      "index": 51,
+      "nameKey": "lb.pool.051"
+    },
+    {
+      "index": 52,
+      "nameKey": "lb.pool.052"
+    },
+    {
+      "index": 53,
+      "nameKey": "lb.pool.053"
+    },
+    {
+      "index": 54,
+      "nameKey": "lb.pool.054"
+    },
+    {
+      "index": 55,
+      "nameKey": "lb.pool.055"
+    },
+    {
+      "index": 56,
+      "nameKey": "lb.pool.056"
+    },
+    {
+      "index": 57,
+      "nameKey": "lb.pool.057"
+    },
+    {
+      "index": 58,
+      "nameKey": "lb.pool.058"
+    },
+    {
+      "index": 59,
+      "nameKey": "lb.pool.059"
+    },
+    {
+      "index": 60,
+      "nameKey": "lb.pool.060"
+    },
+    {
+      "index": 61,
+      "nameKey": "lb.pool.061"
+    },
+    {
+      "index": 62,
+      "nameKey": "lb.pool.062"
+    },
+    {
+      "index": 63,
+      "nameKey": "lb.pool.063"
+    },
+    {
+      "index": 64,
+      "nameKey": "lb.pool.064"
+    },
+    {
+      "index": 65,
+      "nameKey": "lb.pool.065"
+    },
+    {
+      "index": 66,
+      "nameKey": "lb.pool.066"
+    },
+    {
+      "index": 67,
+      "nameKey": "lb.pool.067"
+    },
+    {
+      "index": 68,
+      "nameKey": "lb.pool.068"
+    },
+    {
+      "index": 69,
+      "nameKey": "lb.pool.069"
+    },
+    {
+      "index": 70,
+      "nameKey": "lb.pool.070"
+    },
+    {
+      "index": 71,
+      "nameKey": "lb.pool.071"
+    },
+    {
+      "index": 72,
+      "nameKey": "lb.pool.072"
+    },
+    {
+      "index": 73,
+      "nameKey": "lb.pool.073"
+    },
+    {
+      "index": 74,
+      "nameKey": "lb.pool.074"
+    },
+    {
+      "index": 75,
+      "nameKey": "lb.pool.075"
+    },
+    {
+      "index": 76,
+      "nameKey": "lb.pool.076"
+    },
+    {
+      "index": 77,
+      "nameKey": "lb.pool.077"
+    },
+    {
+      "index": 78,
+      "nameKey": "lb.pool.078"
+    },
+    {
+      "index": 79,
+      "nameKey": "lb.pool.079"
+    },
+    {
+      "index": 80,
+      "nameKey": "lb.pool.080"
+    },
+    {
+      "index": 81,
+      "nameKey": "lb.pool.081"
+    },
+    {
+      "index": 82,
+      "nameKey": "lb.pool.082"
+    },
+    {
+      "index": 83,
+      "nameKey": "lb.pool.083"
+    },
+    {
+      "index": 84,
+      "nameKey": "lb.pool.084"
+    },
+    {
+      "index": 85,
+      "nameKey": "lb.pool.085"
+    },
+    {
+      "index": 86,
+      "nameKey": "lb.pool.086"
+    },
+    {
+      "index": 87,
+      "nameKey": "lb.pool.087"
+    },
+    {
+      "index": 88,
+      "nameKey": "lb.pool.088"
+    },
+    {
+      "index": 89,
+      "nameKey": "lb.pool.089"
+    },
+    {
+      "index": 90,
+      "nameKey": "lb.pool.090"
+    },
+    {
+      "index": 91,
+      "nameKey": "lb.pool.091"
+    },
+    {
+      "index": 92,
+      "nameKey": "lb.pool.092"
+    },
+    {
+      "index": 93,
+      "nameKey": "lb.pool.093"
+    },
+    {
+      "index": 94,
+      "nameKey": "lb.pool.094"
+    },
+    {
+      "index": 95,
+      "nameKey": "lb.pool.095"
+    },
+    {
+      "index": 96,
+      "nameKey": "lb.pool.096"
+    },
+    {
+      "index": 97,
+      "nameKey": "lb.pool.097"
+    },
+    {
+      "index": 98,
+      "nameKey": "lb.pool.098"
+    },
+    {
+      "index": 99,
+      "nameKey": "lb.pool.099"
+    },
+    {
+      "index": 100,
+      "nameKey": "lb.pool.100"
+    },
+    {
+      "index": 101,
+      "nameKey": "lb.pool.101"
+    },
+    {
+      "index": 102,
+      "nameKey": "lb.pool.102"
+    },
+    {
+      "index": 103,
+      "nameKey": "lb.pool.103"
+    },
+    {
+      "index": 104,
+      "nameKey": "lb.pool.104"
+    },
+    {
+      "index": 105,
+      "nameKey": "lb.pool.105"
+    },
+    {
+      "index": 106,
+      "nameKey": "lb.pool.106"
+    },
+    {
+      "index": 107,
+      "nameKey": "lb.pool.107"
+    },
+    {
+      "index": 108,
+      "nameKey": "lb.pool.108"
+    },
+    {
+      "index": 109,
+      "nameKey": "lb.pool.109"
+    },
+    {
+      "index": 110,
+      "nameKey": "lb.pool.110"
+    },
+    {
+      "index": 111,
+      "nameKey": "lb.pool.111"
+    },
+    {
+      "index": 112,
+      "nameKey": "lb.pool.112"
+    },
+    {
+      "index": 113,
+      "nameKey": "lb.pool.113"
+    },
+    {
+      "index": 114,
+      "nameKey": "lb.pool.114"
+    },
+    {
+      "index": 115,
+      "nameKey": "lb.pool.115"
+    },
+    {
+      "index": 116,
+      "nameKey": "lb.pool.116"
+    },
+    {
+      "index": 117,
+      "nameKey": "lb.pool.117"
+    },
+    {
+      "index": 118,
+      "nameKey": "lb.pool.118"
+    },
+    {
+      "index": 119,
+      "nameKey": "lb.pool.119"
+    },
+    {
+      "index": 120,
+      "nameKey": "lb.pool.120"
+    }
+  ]
+}

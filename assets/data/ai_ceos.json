@@ -1,0 +1,115 @@
+{
+  "dataVersion": "1.0.0",
+  "ceos": [
+    {
+      "id": "ceo_rohan_vex",
+      "profile": "agresif",
+      "aggression": 0.9,
+      "maxPremiumOverNT": 0.3,
+      "bidIncrementPct": 6.0,
+      "entryDelayMinutes": 10,
+      "favoriteSectors": [
+        "app",
+        "logistics"
+      ],
+      "tierSpeed": "fast",
+      "auctionBoss": false,
+      "nameKey": "ceo.ceo_rohan_vex.name",
+      "bioKey": "ceo.ceo_rohan_vex.bio"
+    },
+    {
+      "id": "ceo_danil_wang",
+      "profile": "agresif",
+      "aggression": 0.8,
+      "maxPremiumOverNT": 0.25,
+      "bidIncrementPct": 5.0,
+      "entryDelayMinutes": 20,
+      "favoriteSectors": [
+        "fnb",
+        "logistics"
+      ],
+      "tierSpeed": "fast",
+      "auctionBoss": false,
+      "nameKey": "ceo.ceo_danil_wang.name",
+      "bioKey": "ceo.ceo_danil_wang.bio"
+    },
+    {
+      "id": "ceo_tariq_halim",
+      "profile": "kalkulatif",
+      "aggression": 0.4,
+      "maxPremiumOverNT": 0.12,
+      "bidIncrementPct": 3.0,
+      "entryDelayMinutes": 45,
+      "favoriteSectors": [
+        "logistics"
+      ],
+      "tierSpeed": "steady",
+      "auctionBoss": false,
+      "nameKey": "ceo.ceo_tariq_halim.name",
+      "bioKey": "ceo.ceo_tariq_halim.bio"
+    },
+    {
+      "id": "ceo_sasha_kwan",
+      "profile": "kalkulatif",
+      "aggression": 0.35,
+      "maxPremiumOverNT": 0.1,
+      "bidIncrementPct": 3.0,
+      "entryDelayMinutes": 60,
+      "favoriteSectors": [
+        "app"
+      ],
+      "tierSpeed": "steady",
+      "auctionBoss": false,
+      "nameKey": "ceo.ceo_sasha_kwan.name",
+      "bioKey": "ceo.ceo_sasha_kwan.bio"
+    },
+    {
+      "id": "ceo_maya_rin",
+      "profile": "opportunis",
+      "aggression": 0.65,
+      "maxPremiumOverNT": 0.2,
+      "bidIncrementPct": 4.0,
+      "entryDelayMinutes": 25,
+      "favoriteSectors": [
+        "fnb",
+        "app"
+      ],
+      "tierSpeed": "fast",
+      "auctionBoss": false,
+      "nameKey": "ceo.ceo_maya_rin.name",
+      "bioKey": "ceo.ceo_maya_rin.bio"
+    },
+    {
+      "id": "ceo_laila_suri",
+      "profile": "pesimis",
+      "aggression": 0.2,
+      "maxPremiumOverNT": 0.05,
+      "bidIncrementPct": 2.0,
+      "entryDelayMinutes": 90,
+      "favoriteSectors": [
+        "fnb"
+      ],
+      "tierSpeed": "slow",
+      "auctionBoss": false,
+      "nameKey": "ceo.ceo_laila_suri.name",
+      "bioKey": "ceo.ceo_laila_suri.bio"
+    },
+    {
+      "id": "ceo_victor_nyx",
+      "profile": "opportunis",
+      "aggression": 0.7,
+      "maxPremiumOverNT": 0.35,
+      "bidIncrementPct": 5.0,
+      "entryDelayMinutes": 5,
+      "favoriteSectors": [
+        "app",
+        "fnb",
+        "logistics"
+      ],
+      "tierSpeed": "fast",
+      "auctionBoss": true,
+      "nameKey": "ceo.ceo_victor_nyx.name",
+      "bioKey": "ceo.ceo_victor_nyx.bio"
+    }
+  ]
+}

@@ -1,0 +1,401 @@
+{
+  "dataVersion": "1.0.0",
+  "cosmetics": [
+    {
+      "id": "cs_logo_01",
+      "type": "logo_skin",
+      "nameKey": "cs.cs_logo_01.name",
+      "descKey": "cs.cs_logo_01.desc",
+      "fixedRarity": "common",
+      "priceKM": 40,
+      "tierRef": null
+    },
+    {
+      "id": "cs_logo_02",
+      "type": "logo_skin",
+      "nameKey": "cs.cs_logo_02.name",
+      "descKey": "cs.cs_logo_02.desc",
+      "fixedRarity": "common",
+      "priceKM": 45,
+      "tierRef": null
+    },
+    {
+      "id": "cs_logo_03",
+      "type": "logo_skin",
+      "nameKey": "cs.cs_logo_03.name",
+      "descKey": "cs.cs_logo_03.desc",
+      "fixedRarity": "common",
+      "priceKM": 50,
+      "tierRef": null
+    },
+    {
+      "id": "cs_logo_04",
+      "type": "logo_skin",
+      "nameKey": "cs.cs_logo_04.name",
+      "descKey": "cs.cs_logo_04.desc",
+      "fixedRarity": "common",
+      "priceKM": 60,
+      "tierRef": null
+    },
+    {
+      "id": "cs_logo_05",
+      "type": "logo_skin",
+      "nameKey": "cs.cs_logo_05.name",
+      "descKey": "cs.cs_logo_05.desc",
+      "fixedRarity": "rare",
+      "priceKM": 65,
+      "tierRef": null
+    },
+    {
+      "id": "cs_logo_06",
+      "type": "logo_skin",
+      "nameKey": "cs.cs_logo_06.name",
+      "descKey": "cs.cs_logo_06.desc",
+      "fixedRarity": "rare",
+      "priceKM": 70,
+      "tierRef": null
+    },
+    {
+      "id": "cs_logo_07",
+      "type": "logo_skin",
+      "nameKey": "cs.cs_logo_07.name",
+      "descKey": "cs.cs_logo_07.desc",
+      "fixedRarity": "rare",
+      "priceKM": 80,
+      "tierRef": null
+    },
+    {
+      "id": "cs_logo_08",
+      "type": "logo_skin",
+      "nameKey": "cs.cs_logo_08.name",
+      "descKey": "cs.cs_logo_08.desc",
+      "fixedRarity": "rare",
+      "priceKM": 90,
+      "tierRef": null
+    },
+    {
+      "id": "cs_logo_09",
+      "type": "logo_skin",
+      "nameKey": "cs.cs_logo_09.name",
+      "descKey": "cs.cs_logo_09.desc",
+      "fixedRarity": "rare",
+      "priceKM": 95,
+      "tierRef": null
+    },
+    {
+      "id": "cs_logo_10",
+      "type": "logo_skin",
+      "nameKey": "cs.cs_logo_10.name",
+      "descKey": "cs.cs_logo_10.desc",
+      "fixedRarity": "epic",
+      "priceKM": 110,
+      "tierRef": null
+    },
+    {
+      "id": "cs_logo_11",
+      "type": "logo_skin",
+      "nameKey": "cs.cs_logo_11.name",
+      "descKey": "cs.cs_logo_11.desc",
+      "fixedRarity": "epic",
+      "priceKM": 115,
+      "tierRef": null
+    },
+    {
+      "id": "cs_logo_12",
+      "type": "logo_skin",
+      "nameKey": "cs.cs_logo_12.name",
+      "descKey": "cs.cs_logo_12.desc",
+      "fixedRarity": "epic",
+      "priceKM": 120,
+      "tierRef": null
+    },
+    {
+      "id": "cs_hq_01",
+      "type": "hq_theme",
+      "nameKey": "cs.cs_hq_01.name",
+      "descKey": "cs.cs_hq_01.desc",
+      "fixedRarity": "common",
+      "priceKM": 80,
+      "tierRef": null
+    },
+    {
+      "id": "cs_hq_02",
+      "type": "hq_theme",
+      "nameKey": "cs.cs_hq_02.name",
+      "descKey": "cs.cs_hq_02.desc",
+      "fixedRarity": "common",
+      "priceKM": 90,
+      "tierRef": null
+    },
+    {
+      "id": "cs_hq_03",
+      "type": "hq_theme",
+      "nameKey": "cs.cs_hq_03.name",
+      "descKey": "cs.cs_hq_03.desc",
+      "fixedRarity": "rare",
+      "priceKM": 100,
+      "tierRef": null
+    },
+    {
+      "id": "cs_hq_04",
+      "type": "hq_theme",
+      "nameKey": "cs.cs_hq_04.name",
+      "descKey": "cs.cs_hq_04.desc",
+      "fixedRarity": "rare",
+      "priceKM": 120,
+      "tierRef": null
+    },
+    {
+      "id": "cs_hq_05",
+      "type": "hq_theme",
+      "nameKey": "cs.cs_hq_05.name",
+      "descKey": "cs.cs_hq_05.desc",
+      "fixedRarity": "rare",
+      "priceKM": 140,
+      "tierRef": null
+    },
+    {
+      "id": "cs_hq_06",
+      "type": "hq_theme",
+      "nameKey": "cs.cs_hq_06.name",
+      "descKey": "cs.cs_hq_06.desc",
+      "fixedRarity": "epic",
+      "priceKM": 160,
+      "tierRef": null
+    },
+    {
+      "id": "cs_hq_07",
+      "type": "hq_theme",
+      "nameKey": "cs.cs_hq_07.name",
+      "descKey": "cs.cs_hq_07.desc",
+      "fixedRarity": "epic",
+      "priceKM": 180,
+      "tierRef": null
+    },
+    {
+      "id": "cs_hq_08",
+      "type": "hq_theme",
+      "nameKey": "cs.cs_hq_08.name",
+      "descKey": "cs.cs_hq_08.desc",
+      "fixedRarity": "epic",
+      "priceKM": 200,
+      "tierRef": null
+    },
+    {
+      "id": "cs_title_01",
+      "type": "ceo_title",
+      "nameKey": "cs.cs_title_01.name",
+      "descKey": "cs.cs_title_01.desc",
+      "fixedRarity": "common",
+      "priceKM": 30,
+      "tierRef": 1
+    },
+    {
+      "id": "cs_title_02",
+      "type": "ceo_title",
+      "nameKey": "cs.cs_title_02.name",
+      "descKey": "cs.cs_title_02.desc",
+      "fixedRarity": "common",
+      "priceKM": 35,
+      "tierRef": 2
+    },
+    {
+      "id": "cs_title_03",
+      "type": "ceo_title",
+      "nameKey": "cs.cs_title_03.name",
+      "descKey": "cs.cs_title_03.desc",
+      "fixedRarity": "common",
+      "priceKM": 40,
+      "tierRef": 3
+    },
+    {
+      "id": "cs_title_04",
+      "type": "ceo_title",
+      "nameKey": "cs.cs_title_04.name",
+      "descKey": "cs.cs_title_04.desc",
+      "fixedRarity": "common",
+      "priceKM": 45,
+      "tierRef": 4
+    },
+    {
+      "id": "cs_title_05",
+      "type": "ceo_title",
+      "nameKey": "cs.cs_title_05.name",
+      "descKey": "cs.cs_title_05.desc",
+      "fixedRarity": "common",
+      "priceKM": 50,
+      "tierRef": 5
+    },
+    {
+      "id": "cs_title_06",
+      "type": "ceo_title",
+      "nameKey": "cs.cs_title_06.name",
+      "descKey": "cs.cs_title_06.desc",
+      "fixedRarity": "common",
+      "priceKM": 55,
+      "tierRef": 6
+    },
+    {
+      "id": "cs_title_07",
+      "type": "ceo_title",
+      "nameKey": "cs.cs_title_07.name",
+      "descKey": "cs.cs_title_07.desc",
+      "fixedRarity": "common",
+      "priceKM": 60,
+      "tierRef": 7
+    },
+    {
+      "id": "cs_title_08",
+      "type": "ceo_title",
+      "nameKey": "cs.cs_title_08.name",
+      "descKey": "cs.cs_title_08.desc",
+      "fixedRarity": "common",
+      "priceKM": 65,
+      "tierRef": 8
+    },
+    {
+      "id": "cs_title_09",
+      "type": "ceo_title",
+      "nameKey": "cs.cs_title_09.name",
+      "descKey": "cs.cs_title_09.desc",
+      "fixedRarity": "rare",
+      "priceKM": 70,
+      "tierRef": null
+    },
+    {
+      "id": "cs_title_10",
+      "type": "ceo_title",
+      "nameKey": "cs.cs_title_10.name",
+      "descKey": "cs.cs_title_10.desc",
+      "fixedRarity": "rare",
+      "priceKM": 75,
+      "tierRef": null
+    },
+    {
+      "id": "cs_title_11",
+      "type": "ceo_title",
+      "nameKey": "cs.cs_title_11.name",
+      "descKey": "cs.cs_title_11.desc",
+      "fixedRarity": "rare",
+      "priceKM": 80,
+      "tierRef": null
+    },
+    {
+      "id": "cs_title_12",
+      "type": "ceo_title",
+      "nameKey": "cs.cs_title_12.name",
+      "descKey": "cs.cs_title_12.desc",
+      "fixedRarity": "rare",
+      "priceKM": 85,
+      "tierRef": null
+    },
+    {
+      "id": "cs_title_13",
+      "type": "ceo_title",
+      "nameKey": "cs.cs_title_13.name",
+      "descKey": "cs.cs_title_13.desc",
+      "fixedRarity": "rare",
+      "priceKM": 90,
+      "tierRef": null
+    },
+    {
+      "id": "cs_title_14",
+      "type": "ceo_title",
+      "nameKey": "cs.cs_title_14.name",
+      "descKey": "cs.cs_title_14.desc",
+      "fixedRarity": "rare",
+      "priceKM": 100,
+      "tierRef": null
+    },
+    {
+      "id": "cs_title_15",
+      "type": "ceo_title",
+      "nameKey": "cs.cs_title_15.name",
+      "descKey": "cs.cs_title_15.desc",
+      "fixedRarity": "rare",
+      "priceKM": 110,
+      "tierRef": null
+    },
+    {
+      "id": "cs_title_16",
+      "type": "ceo_title",
+      "nameKey": "cs.cs_title_16.name",
+      "descKey": "cs.cs_title_16.desc",
+      "fixedRarity": "rare",
+      "priceKM": 120,
+      "tierRef": null
+    },
+    {
+      "id": "cs_title_17",
+      "type": "ceo_title",
+      "nameKey": "cs.cs_title_17.name",
+      "descKey": "cs.cs_title_17.desc",
+      "fixedRarity": "epic",
+      "priceKM": 125,
+      "tierRef": null
+    },
+    {
+      "id": "cs_title_18",
+      "type": "ceo_title",
+      "nameKey": "cs.cs_title_18.name",
+      "descKey": "cs.cs_title_18.desc",
+      "fixedRarity": "epic",
+      "priceKM": 130,
+      "tierRef": null
+    },
+    {
+      "id": "cs_title_19",
+      "type": "ceo_title",
+      "nameKey": "cs.cs_title_19.name",
+      "descKey": "cs.cs_title_19.desc",
+      "fixedRarity": "epic",
+      "priceKM": 135,
+      "tierRef": null
+    },
+    {
+      "id": "cs_title_20",
+      "type": "ceo_title",
+      "nameKey": "cs.cs_title_20.name",
+      "descKey": "cs.cs_title_20.desc",
+      "fixedRarity": "epic",
+      "priceKM": 140,
+      "tierRef": null
+    },
+    {
+      "id": "cs_title_21",
+      "type": "ceo_title",
+      "nameKey": "cs.cs_title_21.name",
+      "descKey": "cs.cs_title_21.desc",
+      "fixedRarity": "epic",
+      "priceKM": 145,
+      "tierRef": null
+    },
+    {
+      "id": "cs_title_22",
+      "type": "ceo_title",
+      "nameKey": "cs.cs_title_22.name",
+      "descKey": "cs.cs_title_22.desc",
+      "fixedRarity": "epic",
+      "priceKM": 148,
+      "tierRef": null
+    },
+    {
+      "id": "cs_title_23",
+      "type": "ceo_title",
+      "nameKey": "cs.cs_title_23.name",
+      "descKey": "cs.cs_title_23.desc",
+      "fixedRarity": "epic",
+      "priceKM": 150,
+      "tierRef": null
+    },
+    {
+      "id": "cs_title_24",
+      "type": "ceo_title",
+      "nameKey": "cs.cs_title_24.name",
+      "descKey": "cs.cs_title_24.desc",
+      "fixedRarity": "epic",
+      "priceKM": 150,
+      "tierRef": null
+    }
+  ]
+}

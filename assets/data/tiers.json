@@ -1,0 +1,93 @@
+{
+  "dataVersion": "1.0.0",
+  "tiers": [
+    {
+      "id": "t1",
+      "titleKey": "tier.t1.title",
+      "maxOperations": 3,
+      "maxStaff": 6,
+      "baseValueA": 40000,
+      "targetDailyNetIncome": 6000,
+      "reputationThreshold": null,
+      "tierUpRewardDP": null,
+      "rewardKey": null
+    },
+    {
+      "id": "t2",
+      "titleKey": "tier.t2.title",
+      "maxOperations": 6,
+      "maxStaff": 8,
+      "baseValueA": 80000,
+      "targetDailyNetIncome": 14000,
+      "reputationThreshold": 10,
+      "tierUpRewardDP": 10,
+      "rewardKey": "tier.t2.reward"
+    },
+    {
+      "id": "t3",
+      "titleKey": "tier.t3.title",
+      "maxOperations": 9,
+      "maxStaff": 10,
+      "baseValueA": 150000,
+      "targetDailyNetIncome": 32000,
+      "reputationThreshold": 20,
+      "tierUpRewardDP": 20,
+      "rewardKey": "tier.t3.reward"
+    },
+    {
+      "id": "t4",
+      "titleKey": "tier.t4.title",
+      "maxOperations": 12,
+      "maxStaff": 12,
+      "baseValueA": 400000,
+      "targetDailyNetIncome": 75000,
+      "reputationThreshold": 35,
+      "tierUpRewardDP": 35,
+      "rewardKey": "tier.t4.reward"
+    },
+    {
+      "id": "t5",
+      "titleKey": "tier.t5.title",
+      "maxOperations": 15,
+      "maxStaff": 14,
+      "baseValueA": 1100000,
+      "targetDailyNetIncome": 170000,
+      "reputationThreshold": 50,
+      "tierUpRewardDP": 50,
+      "rewardKey": "tier.t5.reward"
+    },
+    {
+      "id": "t6",
+      "titleKey": "tier.t6.title",
+      "maxOperations": 18,
+      "maxStaff": 16,
+      "baseValueA": 3000000,
+      "targetDailyNetIncome": 400000,
+      "reputationThreshold": 60,
+      "tierUpRewardDP": 60,
+      "rewardKey": "tier.t6.reward"
+    },
+    {
+      "id": "t7",
+      "titleKey": "tier.t7.title",
+      "maxOperations": 21,
+      "maxStaff": 18,
+      "baseValueA": 8500000,
+      "targetDailyNetIncome": 950000,
+      "reputationThreshold": 70,
+      "tierUpRewardDP": 70,
+      "rewardKey": "tier.t7.reward"
+    },
+    {
+      "id": "t8",
+      "titleKey": "tier.t8.title",
+      "maxOperations": 24,
+      "maxStaff": 20,
+      "baseValueA": 24000000,
+      "targetDailyNetIncome": 2200000,
+      "reputationThreshold": 80,
+      "tierUpRewardDP": 80,
+      "rewardKey": "tier.t8.reward"
+    }
+  ]
+}

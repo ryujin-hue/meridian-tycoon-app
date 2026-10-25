@@ -1,0 +1,173 @@
+{
+  "dataVersion": "1.0.0",
+  "nodes": [
+    {
+      "id": "rs_op_1",
+      "tree": "operasi",
+      "stage": 1,
+      "nameKey": "rs.rs_op_1.name",
+      "descKey": "rs.rs_op_1.desc",
+      "costDP": 20,
+      "unlockTier": 1,
+      "effect": {
+        "type": "operations_income_pct",
+        "perStageValue": 3,
+        "hardCapValue": 12
+      }
+    },
+    {
+      "id": "rs_op_2",
+      "tree": "operasi",
+      "stage": 2,
+      "nameKey": "rs.rs_op_2.name",
+      "descKey": "rs.rs_op_2.desc",
+      "costDP": 30,
+      "unlockTier": 2,
+      "effect": {
+        "type": "offline_cap_hours",
+        "perStageValue": 1,
+        "hardCapValue": 12
+      }
+    },
+    {
+      "id": "rs_op_3",
+      "tree": "operasi",
+      "stage": 3,
+      "nameKey": "rs.rs_op_3.name",
+      "descKey": "rs.rs_op_3.desc",
+      "costDP": 45,
+      "unlockTier": 4,
+      "effect": {
+        "type": "upgrade_cost_reduction_pct",
+        "perStageValue": 2,
+        "hardCapValue": 8
+      }
+    },
+    {
+      "id": "rs_op_4",
+      "tree": "operasi",
+      "stage": 4,
+      "nameKey": "rs.rs_op_4.name",
+      "descKey": "rs.rs_op_4.desc",
+      "costDP": 80,
+      "unlockTier": 6,
+      "effect": {
+        "type": "operations_income_pct",
+        "perStageValue": 5,
+        "hardCapValue": 5
+      }
+    },
+    {
+      "id": "rs_mk_1",
+      "tree": "pasaran",
+      "stage": 1,
+      "nameKey": "rs.rs_mk_1.name",
+      "descKey": "rs.rs_mk_1.desc",
+      "costDP": 20,
+      "unlockTier": 2,
+      "effect": {
+        "type": "reputation_gain_pct",
+        "perStageValue": 5,
+        "hardCapValue": 20
+      }
+    },
+    {
+      "id": "rs_mk_2",
+      "tree": "pasaran",
+      "stage": 2,
+      "nameKey": "rs.rs_mk_2.name",
+      "descKey": "rs.rs_mk_2.desc",
+      "costDP": 35,
+      "unlockTier": 3,
+      "effect": {
+        "type": "contract_reward_pct",
+        "perStageValue": 5,
+        "hardCapValue": 15
+      }
+    },
+    {
+      "id": "rs_mk_3",
+      "tree": "pasaran",
+      "stage": 3,
+      "nameKey": "rs.rs_mk_3.name",
+      "descKey": "rs.rs_mk_3.desc",
+      "costDP": 50,
+      "unlockTier": 5,
+      "effect": {
+        "type": "market_news_boost_pct",
+        "perStageValue": 2,
+        "hardCapValue": 8
+      }
+    },
+    {
+      "id": "rs_mk_4",
+      "tree": "pasaran",
+      "stage": 4,
+      "nameKey": "rs.rs_mk_4.name",
+      "descKey": "rs.rs_mk_4.desc",
+      "costDP": 70,
+      "unlockTier": 7,
+      "effect": {
+        "type": "market_scan_duration_hours",
+        "perStageValue": 6,
+        "hardCapValue": 6
+      }
+    },
+    {
+      "id": "rs_mg_1",
+      "tree": "merger",
+      "stage": 1,
+      "nameKey": "rs.rs_mg_1.name",
+      "descKey": "rs.rs_mg_1.desc",
+      "costDP": 25,
+      "unlockTier": 3,
+      "effect": {
+        "type": "auction_fee_reduction_pct",
+        "perStageValue": 0.2,
+        "hardCapValue": 0.8
+      }
+    },
+    {
+      "id": "rs_mg_2",
+      "tree": "merger",
+      "stage": 2,
+      "nameKey": "rs.rs_mg_2.name",
+      "descKey": "rs.rs_mg_2.desc",
+      "costDP": 40,
+      "unlockTier": 4,
+      "effect": {
+        "type": "bid_insight_pct",
+        "perStageValue": 1,
+        "hardCapValue": 3
+      }
+    },
+    {
+      "id": "rs_mg_3",
+      "tree": "merger",
+      "stage": 3,
+      "nameKey": "rs.rs_mg_3.name",
+      "descKey": "rs.rs_mg_3.desc",
+      "costDP": 60,
+      "unlockTier": 6,
+      "effect": {
+        "type": "respawn_reduction_hours",
+        "perStageValue": 6,
+        "hardCapValue": 18
+      }
+    },
+    {
+      "id": "rs_mg_4",
+      "tree": "merger",
+      "stage": 4,
+      "nameKey": "rs.rs_mg_4.name",
+      "descKey": "rs.rs_mg_4.desc",
+      "costDP": 100,
+      "unlockTier": 8,
+      "effect": {
+        "type": "legacy_premium_reduction_pct",
+        "perStageValue": 2,
+        "hardCapValue": 2
+      }
+    }
+  ]
+}

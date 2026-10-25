@@ -1,0 +1,38 @@
+{
+  "dataVersion": "1.0.0",
+  "sectors": [
+    {
+      "id": "app",
+      "nameKey": "sec.app.name",
+      "descKey": "sec.app.desc",
+      "multiplier": 1.15,
+      "synergySectors": [
+        "fnb",
+        "logistics"
+      ],
+      "colorHex": "#4C7DF0"
+    },
+    {
+      "id": "fnb",
+      "nameKey": "sec.fnb.name",
+      "descKey": "sec.fnb.desc",
+      "multiplier": 0.9,
+      "synergySectors": [
+        "app",
+        "logistics"
+      ],
+      "colorHex": "#F09A4C"
+    },
+    {
+      "id": "logistics",
+      "nameKey": "sec.logistics.name",
+      "descKey": "sec.logistics.desc",
+      "multiplier": 1.0,
+      "synergySectors": [
+        "app",
+        "fnb"
+      ],
+      "colorHex": "#46B58A"
+    }
+  ]
+}

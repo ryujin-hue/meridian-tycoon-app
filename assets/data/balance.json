@@ -1,0 +1,42 @@
+{
+  "dataVersion": "1.0.0",
+  "auctionFeePct": 2.0,
+  "auctionStartPctOfNT": 95.0,
+  "leverageMaxPct": 40.0,
+  "leverageInterestWeeklyPct": 8.0,
+  "leverageCapDailyNetMultiplier": 2.0,
+  "auctionDurationHours": 8.0,
+  "offlineCapHours": 8.0,
+  "upgradeCostGrowth": 1.15,
+  "purchasedCompanyNetContributionPct": 35.0,
+  "lostTargetRespawnHours": 48.0,
+  "legacyPremiumMinPct": 15.0,
+  "legacyPremiumMaxPct": 25.0,
+  "calibration": {
+    "activeHoursPerDay": 16.0,
+    "salaryShareOfGrossPct": 20.0,
+    "companyCoverageOfTargetPct": 30.0,
+    "opsCoverageOfTargetPct": 100,
+    "tolerancePct": 15
+  },
+  "currencies": [
+    {
+      "id": "tm",
+      "nameKey": "ui.currency.tm.name",
+      "descKey": "ui.currency.tm.desc",
+      "premium": false
+    },
+    {
+      "id": "dp",
+      "nameKey": "ui.currency.dp.name",
+      "descKey": "ui.currency.dp.desc",
+      "premium": false
+    },
+    {
+      "id": "km",
+      "nameKey": "ui.currency.km.name",
+      "descKey": "ui.currency.km.desc",
+      "premium": true
+    }
+  ]
+}

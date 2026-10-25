@@ -1,0 +1,200 @@
+{
+  "dataVersion": "1.0.0",
+  "roles": [
+    {
+      "id": "coo",
+      "nameKey": "role.coo.name",
+      "descKey": "role.coo.desc",
+      "passive": {
+        "statKey": "operations_income",
+        "perStarPct": 2.0,
+        "hardCapPct": 10.0,
+        "descKey": "role.coo.passive"
+      },
+      "activeSkill": {
+        "skillId": "overtime",
+        "nameKey": "role.coo.active_name",
+        "descKey": "role.coo.active_desc",
+        "cooldownHours": 6,
+        "unlockStar": 1
+      },
+      "salaryByTier": [
+        640,
+        1210,
+        2300,
+        4600,
+        9200,
+        19200,
+        40820,
+        86250
+      ],
+      "hireBaseCostPerStarTM": 2500,
+      "hireTierScale": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ]
+    },
+    {
+      "id": "cfo",
+      "nameKey": "role.cfo.name",
+      "descKey": "role.cfo.desc",
+      "passive": {
+        "statKey": "leverage_interest_reduction",
+        "perStarPct": 0.5,
+        "hardCapPct": 2.5,
+        "descKey": "role.cfo.passive"
+      },
+      "activeSkill": {
+        "skillId": "audit_clean",
+        "nameKey": "role.cfo.active_name",
+        "descKey": "role.cfo.active_desc",
+        "cooldownHours": 72,
+        "unlockStar": 2
+      },
+      "salaryByTier": [
+        640,
+        1210,
+        2300,
+        4600,
+        9200,
+        19200,
+        40820,
+        86250
+      ],
+      "hireBaseCostPerStarTM": 2500,
+      "hireTierScale": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ]
+    },
+    {
+      "id": "cmo",
+      "nameKey": "role.cmo.name",
+      "descKey": "role.cmo.desc",
+      "passive": {
+        "statKey": "reputation_gain",
+        "perStarPct": 5.0,
+        "hardCapPct": 25.0,
+        "descKey": "role.cmo.passive"
+      },
+      "activeSkill": {
+        "skillId": "campaign",
+        "nameKey": "role.cmo.active_name",
+        "descKey": "role.cmo.active_desc",
+        "cooldownHours": 168,
+        "unlockStar": 2
+      },
+      "salaryByTier": [
+        590,
+        1100,
+        2100,
+        4200,
+        8400,
+        17540,
+        37280,
+        78750
+      ],
+      "hireBaseCostPerStarTM": 2500,
+      "hireTierScale": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ]
+    },
+    {
+      "id": "cto",
+      "nameKey": "role.cto.name",
+      "descKey": "role.cto.desc",
+      "passive": {
+        "statKey": "upgrade_cost_reduction",
+        "perStarPct": 1.5,
+        "hardCapPct": 7.5,
+        "descKey": "role.cto.passive"
+      },
+      "activeSkill": {
+        "skillId": "market_scan",
+        "nameKey": "role.cto.active_name",
+        "descKey": "role.cto.active_desc",
+        "cooldownHours": 48,
+        "unlockStar": 3
+      },
+      "salaryByTier": [
+        670,
+        1260,
+        2400,
+        4800,
+        9600,
+        20040,
+        42600,
+        90000
+      ],
+      "hireBaseCostPerStarTM": 2500,
+      "hireTierScale": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ]
+    },
+    {
+      "id": "hr",
+      "nameKey": "role.hr.name",
+      "descKey": "role.hr.desc",
+      "passive": {
+        "statKey": "hire_cost_reduction",
+        "perStarPct": 4.0,
+        "hardCapPct": 20.0,
+        "descKey": "role.hr.passive"
+      },
+      "activeSkill": {
+        "skillId": "recruitment",
+        "nameKey": "role.hr.active_name",
+        "descKey": "role.hr.active_desc",
+        "cooldownHours": 720,
+        "unlockStar": 3
+      },
+      "salaryByTier": [
+        500,
+        940,
+        1800,
+        3600,
+        7200,
+        15030,
+        31950,
+        67500
+      ],
+      "hireBaseCostPerStarTM": 2500,
+      "hireTierScale": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ]
+    }
+  ]
+}
