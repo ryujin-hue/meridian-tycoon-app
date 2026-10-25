@@ -228,16 +228,22 @@ AuctionState createAuction({
   final pool = <AiCeo>[];
   for (final c in ceos) {
     final fav = c.favoriteSectors.contains(target.sector);
-    final legacyPull = target.category == 'legacy' && c.auctionBoss;
-    final opportunistic = !fav && !legacyPull && rng.chance(0.30 + aggressionBoostPct / 100.0);
-    if (fav || legacyPull || opportunistic) pool.add(c);
+    // Boss lelongan HANYA menyertai sasaran legacy (INTEGRATION.md repo data).
+    if (c.auctionBoss && target.category != 'legacy') continue;
+    // Minat ditentukan aggression (favoriteSectors menguatkan) — seeded.
+    final pInterest =
+        (c.aggression + (fav ? 0.30 : -0.10) + aggressionBoostPct / 100.0)
+            .clamp(0.05, 0.95);
+    if (rng.chance(pInterest)) pool.add(c);
   }
   // CEO tambahan (Perang Bidaan) daripada yang belum masuk pool.
   final rest = ceos.where((c) => !pool.contains(c)).toList();
   for (var i = 0; i < extraCompetitors && rest.isNotEmpty; i++) {
     pool.add(rest.removeAt(rng.nextIntBounded(rest.length)));
   }
-  if (pool.isEmpty && boss.isNotEmpty) pool.add(boss.first);
+  if (pool.isEmpty && boss.isNotEmpty && target.category == 'legacy') {
+    pool.add(boss.first);
+  }
   // Jaminan sekurang-kurangnya satu pesaing untuk lelongan biasa.
   if (pool.isEmpty && ceos.isNotEmpty && !scripted) {
     pool.add(ceos[rng.nextIntBounded(ceos.length)]);

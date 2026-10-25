@@ -640,27 +640,23 @@ class GameController extends AsyncNotifier<GameState> {
     var a = simulateAuction(s.auctions[idx], nowMinute);
     if (amount <= a.currentPrice) return;
 
-    // Yuran bidaan (reduksi research; hardCap data menghadkan lantai).
+    // Yuran bidaan didebit SEMASA bida (tidak dikembalikan).
+    // Harga dibayar HANYA semasa MENANG (lihat _resolveAuctions) — model
+    // bidaan tanpa eskro; skrin sahkan tetap memaparkan tunai diperlukan.
     final fee = auctionFee(data.balance, amount,
         reductionPct: _researchValue('auction_fee_reduction_pct'));
-    // Tunai diperlukan: yuran + bahagian tunai harga (bakinya leverage).
     final maxLev = maxLeverage(data.balance, amount, _netDailyIncome(s));
     final lev = leverage.clamp(0, maxLev);
-    final cashNeeded = fee + (amount - lev);
-    if (s.tm < cashNeeded) {
+    // Skrin sahkan memaparkan yuran + bahagian tunai (fee + amount - lev);
+    // semasa bida hanya yuran didebit — harga dibayar semasa menang.
+    if (s.tm < fee) {
       _toast('ui.msg.no_funds');
       return;
-    }
-    // Faedah leverage mingguan dijelaskan pada skrin sahkan; hutang dicatat.
-    var debt = s.debt;
-    if (lev > 0) {
-      debt = DebtState(debt.principal + lev, debt.lastInterestWeekKey);
     }
     a = placePlayerBid(a, amount, nowMinute);
     final auctions = [...s.auctions];
     auctions[idx] = a;
-    _apply(s.copyWith(
-        auctions: auctions, tm: s.tm - cashNeeded, debt: debt));
+    _apply(s.copyWith(auctions: auctions, tm: s.tm - fee));
     _tutorialAction('buy_first_company');
     await _persist();
   }
