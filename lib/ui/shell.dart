@@ -9,6 +9,7 @@ import '../app/i18n.dart';
 import '../state/game_controller.dart';
 import '../state/game_state.dart';
 import 'company_screen.dart';
+import 'widgets/lottie_burst.dart';
 import 'hq_screen.dart';
 import 'market_screen.dart';
 import 'research_screen.dart';
@@ -23,6 +24,7 @@ class GameShell extends ConsumerStatefulWidget {
 
 class _GameShellState extends ConsumerState<GameShell> with WidgetsBindingObserver {
   int _tab = 0;
+  int _collectTrigger = 0;
 
   @override
   void initState() {
@@ -65,16 +67,19 @@ class _GameShellState extends ConsumerState<GameShell> with WidgetsBindingObserv
 
     return Scaffold(
       appBar: _appBar(context, i18n, state),
-      body: IndexedStack(
-        index: _tab,
-        children: const [
-          HqScreen(),
-          MarketScreen(),
-          StaffScreen(),
-          ResearchScreen(),
-          CompanyScreen(),
-        ],
-      ),
+      body: Stack(children: [
+        IndexedStack(
+          index: _tab,
+          children: const [
+            HqScreen(),
+            MarketScreen(),
+            StaffScreen(),
+            ResearchScreen(),
+            CompanyScreen(),
+          ],
+        ),
+        BurstHost(trigger: _collectTrigger, enabled: !state.settings.reduceMotion),
+      ]),
       bottomNavigationBar: Column(mainAxisSize: MainAxisSize.min, children: [
         _quickBar(context, i18n, state),
         NavigationBar(
@@ -124,7 +129,13 @@ class _GameShellState extends ConsumerState<GameShell> with WidgetsBindingObserv
         child: Row(children: [
           Expanded(
             child: FilledButton.icon(
-              onPressed: () => ctl.collect(),
+              onPressed: () async {
+                final amount = pend.amount;
+                await ctl.collect();
+                if (amount > 0 && mounted) {
+                  setState(() => _collectTrigger++);
+                }
+              },
               icon: const Icon(Icons.monetization_on),
               label: Text(
                   '${i18n.t('ui.app.collect_all')} · +${moneyCompact(pend.amount)}'),

@@ -58,6 +58,8 @@ void main() {
     for (var i = 0; i < 5; i++) {
       await tester.pump(const Duration(milliseconds: 100));
     }
+    // Lapiskan timer animasi Lottie (1.5s) dalam fake-async.
+    await tester.pump(const Duration(seconds: 2));
 
     // Shell dimuat: bar navigasi wujud dengan 5 tab.
     expect(find.byType(NavigationBar), findsOneWidget);
@@ -95,6 +97,7 @@ void main() {
       child: const MeridianApp(),
     ));
     await tester.pump(const Duration(milliseconds: 100));
+    await tester.pump(const Duration(seconds: 2));
 
     // Putar skrin (orientasi landscape → rebuild).
     await tester.binding.setSurfaceSize(const Size(800, 400));

@@ -190,6 +190,20 @@ class _AuctionRow extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final now = DateTime.now().toUtc().millisecondsSinceEpoch ~/ 60000;
+    final ctl = ref.read(gameControllerProvider.notifier);
+    // Rundingan tertunggak (Mega/Legacy round 2 dimenangi).
+    if (auction.clauses != null) {
+      return ListTile(
+        dense: true,
+        leading: const Icon(Icons.handshake, color: Colors.amber),
+        title: Text(i18n.t(auction.target.nameKey)),
+        subtitle: Text(i18n.t('ui.app.negotiation_title')),
+        trailing: FilledButton.tonal(
+          onPressed: () => _openNegotiation(context, ref, ctl),
+          child: Text(i18n.t('ui.app.season_claim')),
+        ),
+      );
+    }
     final left = auction.endMinute - now;
     final r2 = auction.target.isMegaOrLegacy && auction.round == 2;
     return ListTile(
@@ -199,14 +213,22 @@ class _AuctionRow extends ConsumerWidget {
       subtitle: Text(
           '${i18n.t('ui.app.current_price')}: ${money(auction.currentPrice)} · ${i18n.t('ui.app.time_left')}: ${left.clamp(0, 9999)}m'
           '${r2 ? ' · ${i18n.t('ui.app.round', {'n': 2})}' : ''}'),
-      trailing: Text(
-        auction.leader == null
-            ? i18n.t('ui.app.no_bidder')
-            : auction.leader == 'player'
-                ? i18n.t('ui.app.you')
-                : i18n.t(auction.leader!),
-        style: const TextStyle(fontWeight: FontWeight.w700),
-      ),
+      trailing: Row(mainAxisSize: MainAxisSize.min, children: [
+        IconButton(
+          tooltip: 'Auction Room',
+          onPressed: () => Navigator.push(context,
+              MaterialPageRoute(builder: (_) => AuctionRoomPage(auctionId: auction.id))),
+          icon: const Icon(Icons.theater_comedy),
+        ),
+        Text(
+          auction.leader == null
+              ? i18n.t('ui.app.no_bidder')
+              : auction.leader == 'player'
+                  ? i18n.t('ui.app.you')
+                  : i18n.t(auction.leader!),
+          style: const TextStyle(fontWeight: FontWeight.w700),
+        ),
+      ]),
       onTap: () => _openBidSheet(context, ref),
     );
   }
@@ -215,6 +237,45 @@ class _AuctionRow extends ConsumerWidget {
     showModalBottomSheet(
       context: context,
       builder: (_) => BidSheet(auction: auction),
+    );
+  }
+
+  Future<void> _openNegotiation(
+      BuildContext context, WidgetRef ref, GameController ctl) async {
+    final picked = await showModalBottomSheet<int>(
+      context: context,
+      builder: (_) => NegotiationSheet(auction: auction),
+    );
+    if (picked != null) {
+      await ctl.applyNegotiationClause(auction.id, picked);
+    }
+  }
+}
+
+/// Halaman Auction Room penuh (adegan Flame).
+class AuctionRoomPage extends StatelessWidget {
+  final String auctionId;
+  const AuctionRoomPage({super.key, required this.auctionId});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Auction Room')),
+      body: Consumer(builder: (context, ref, _) {
+        final data = ref.watch(gameDataProvider)!;
+        final state = ref.watch(gameControllerProvider).value!;
+        final reduceMotion = state.settings.reduceMotion;
+        if (reduceMotion) {
+          return const Center(child: Icon(Icons.gavel, size: 64));
+        }
+        return GameWidget(
+          game: AuctionRoomGame(
+            data,
+            () => ref.read(gameControllerProvider).value,
+            auctionId,
+          ),
+        );
+      }),
     );
   }
 }

@@ -164,6 +164,14 @@ class AuctionState {
     this.clauses,
   });
 
+  AuctionState withClauses(List<NegotiationClause> c) => AuctionState(
+        id: id, target: target, startMinute: startMinute, endMinute: endMinute,
+        round: round, seed: seed, scripted: scripted,
+        scriptedQuietMinutes: scriptedQuietMinutes, bidders: bidders,
+        currentPrice: currentPrice, leader: leader,
+        processedMinute: processedMinute, playerBids: playerBids, clauses: c,
+      );
+
   Map<String, dynamic> toJson() => {
         'id': id, 'target': target.toJson(), 'startMinute': startMinute,
         'endMinute': endMinute, 'round': round, 'seed': seed,

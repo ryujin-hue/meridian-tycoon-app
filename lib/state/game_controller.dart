@@ -11,6 +11,8 @@ import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
 
 import '../app/config.dart';
+import '../app/notifications.dart';
+import '../app/i18n.dart' show I18n, appStringsFor;
 import '../data/data_loader.dart';
 import '../data/models.dart';
 import '../data/save_repository.dart';
@@ -202,6 +204,11 @@ class GameController extends AsyncNotifier<GameState> {
     var lost = s.stats.auctionsLost;
 
     for (final a in s.auctions) {
+      // Rundingan tertunggak (Mega/Legacy): menunggu pemain pilih klausa.
+      if (a.clauses != null) {
+        remaining.add(a);
+        continue;
+      }
       final simulated = simulateAuction(a, nowMinute);
       final outcome = resolveIfEnded(simulated);
       if (outcome == null) {
@@ -244,6 +251,12 @@ class GameController extends AsyncNotifier<GameState> {
         tm -= cashPart;
         if (allowedLev > 0) {
           debt = DebtState(debt.principal + allowedLev, debt.lastInterestWeekKey);
+        }
+        if (outcome.target.isMegaOrLegacy && simulated.round == 2) {
+          // Rundingan 1-daripada-3 klausa (Peraturan F) — syarikat masuk
+          // selepas pemain sahkan klausa (applyNegotiationClause).
+          remaining.add(simulated.withClauses(generateClauses(simulated.seed)));
+          continue;
         }
         companies.add(OwnedCompany(outcome.target, 1, nowMinute));
         rep = (rep + 1.5).clamp(0, 100);
@@ -589,6 +602,19 @@ class GameController extends AsyncNotifier<GameState> {
     _apply(s.copyWith(auctions: [...s.auctions, a]));
     _tutorialAction('open_market');
     await _persist();
+    // Notifikasi keputusan (inexact, maks 2 sehari, pemasaran mati).
+    if (s.settings.notifications && (s.notifCount) < AppConfig.maxNotificationsPerDay) {
+      try {
+        await NotificationService().scheduleAuctionResult(
+          id: a.id.hashCode & 0x7fffffff,
+          endUtc: DateTime.fromMillisecondsSinceEpoch(a.endMinute * 60000,
+              isUtc: true),
+          titleKey: 'notif.auction_outbid.title',
+          bodyKey: 'notif.auction_outbid.body',
+          i18n: _i18n(),
+        );
+      } catch (_) {/* notifikasi tidak kritikal */}
+    }
   }
 
   (int, double)? _activeBiddingWar(GameState s) {
@@ -1048,6 +1074,17 @@ class GameController extends AsyncNotifier<GameState> {
   }
 
   void _toast(String key) => _toastCtl.add(key);
+
+  /// I18n semasa untuk notifikasi (kunci notif.* daripada data).
+  I18n _i18n() {
+    final s = state.value;
+    final lang = s?.settings.lang ?? 'ms';
+    return I18n.merge(
+      lang: lang,
+      dataStrings: data.i18n[lang] ?? const {},
+      appStrings: appStringsFor(lang),
+    );
+  }
 
   void _notifyOnce(String titleKey) {
     final s = state.value;

@@ -12,6 +12,7 @@ import '../../app/i18n.dart';
 import '../../data/save_repository.dart';
 // FileSaveRepository dipakai untuk import/eksport
 import '../../state/game_controller.dart';
+import '../../app/notifications.dart';
 
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
@@ -65,7 +66,12 @@ class SettingsScreen extends ConsumerWidget {
             title: Text(i18n.t('ui.app.settings.notifications')),
             subtitle: Text(i18n.t('ui.app.notif_note')),
             value: s.notifications,
-            onChanged: (v) => ctl.updateSettings(s.copyWith(notifications: v)),
+            onChanged: (v) async {
+              if (v) {
+                await NotificationService().requestPermission();
+              }
+              await ctl.updateSettings(s.copyWith(notifications: v));
+            },
           ),
           SwitchListTile(
             title: Text(i18n.t('ui.app.settings.reduce_motion')),
