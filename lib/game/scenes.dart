@@ -9,17 +9,17 @@ import 'package:flame/game.dart';
 import 'package:flutter/material.dart' hide Colors;
 
 import '../data/models.dart';
+import '../domain/auction.dart' show AuctionState;
 import '../state/game_state.dart';
 
 class CitySkylineGame extends FlameGame {
   final GameData data;
-  final GameState Function() readState;
+  final GameState? Function() readState;
   CitySkylineGame(this.data, this.readState);
 
   @override
   Future<void> onLoad() async {
-    final st = readState();
-    final targets = st.market.take(9).toList();
+    final targets = readState()?.market.take(9).toList() ?? const <MarketTarget>[];
     final colors = {
       for (final s in data.sectors) s.id: _parse(s.colorHex),
     };
@@ -56,7 +56,7 @@ class CitySkylineGame extends FlameGame {
 /// harga, pemasa. Prosedur.
 class AuctionRoomGame extends FlameGame {
   final GameData data;
-  final GameState Function() readState;
+  final GameState? Function() readState;
   final String auctionId;
   final bool reduceMotion;
 
@@ -76,10 +76,11 @@ class AuctionRoomGame extends FlameGame {
       paint: Paint()..color = const Color(0xFF2A3A57),
     ));
     // Avatar: pemain tengah, AI di kedua-dua belah (maks 6 — had komponen).
-    final st = readState();
-    final a = st.auctions.firstWhere(
-        (x) => x.id == auctionId,
-        orElse: () => st.auctions.first);
+    final aucs = readState()?.auctions ?? const <AuctionState>[];
+    final a = aucs.isEmpty
+        ? null
+        : aucs.firstWhere((x) => x.id == auctionId, orElse: () => aucs.first);
+    if (a == null) return;
     final ceoCount = a.bidders.take(6).toList();
     for (var i = 0; i < ceoCount.length + 1; i++) {
       final x = size.x * (0.15 + 0.7 * i / (ceoCount.length));
@@ -108,7 +109,13 @@ class AuctionRoomGame extends FlameGame {
   @override
   void update(double dt) {
     super.update(dt);
-    final st = readState();
+    final GameState? st;
+    try {
+      st = readState();
+    } catch (_) {
+      return;
+    }
+    if (st == null) return;
     final a = st.auctions.where((x) => x.id == auctionId).firstOrNull;
     if (a == null) return;
     final now = DateTime.now().toUtc().millisecondsSinceEpoch ~/ 60000;

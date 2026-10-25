@@ -28,7 +28,7 @@ int botWeeklyScore(LeaderboardBot bot, DateTime utc) {
 /// Nama pengganti daripada namePool (bot "dipromosi" — deterministik).
 String replacementNameKey(LeaderboardData data, DateTime utc, int slot) {
   final rng = SeededRng(0xF00D ^ weekKey(utc) ^ slot);
-  return data.namePool[rng.nextIntBounded(data.namePool.length)];
+  return data.namePool[rng.nextIntBounded(data.namePool.length)].nameKey;
 }
 
 /// Papan penuh: 29 bot + pemain, susun menurun.

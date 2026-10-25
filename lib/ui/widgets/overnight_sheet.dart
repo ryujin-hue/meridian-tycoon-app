@@ -20,6 +20,7 @@ class OvernightSheet extends ConsumerWidget {
     return SafeArea(
       child: Padding(
         padding: const EdgeInsets.all(16),
+        child: SingleChildScrollView(
         child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start,
             children: [
           Text(i18n.t('ui.app.overnight_title'),
@@ -104,6 +105,7 @@ class OvernightSheet extends ConsumerWidget {
             ),
           ),
         ]),
+        ),
       ),
     );
   }

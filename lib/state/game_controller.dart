@@ -31,10 +31,12 @@ class GameDeps {
   final Clock clock;
   final http.Client client;
   final Future<Directory> Function() docsDir;
+  final SaveRepository? saveOverride; // test: MemorySaveRepository
   const GameDeps({
     required this.clock,
     required this.client,
     required this.docsDir,
+    this.saveOverride,
   });
 
   static Future<Directory> defaultDocsDir() async =>
@@ -76,7 +78,8 @@ class GameController extends AsyncNotifier<GameState> {
   Clock get _clock =>
       ref.read(gameDepsProvider).clock;
   SaveRepository get _saves =>
-      SaveRepository(ref.read(gameDepsProvider).docsDir);
+      ref.read(gameDepsProvider).saveOverride ??
+      FileSaveRepository(ref.read(gameDepsProvider).docsDir);
   DataLoader get _loader => DataLoader(
         client: ref.read(gameDepsProvider).client,
         docsDir: ref.read(gameDepsProvider).docsDir,
@@ -91,11 +94,14 @@ class GameController extends AsyncNotifier<GameState> {
 
   @override
   Future<GameState> build() async {
-    // 1) Data: cache (jika sah) → bundled.
+    // 1) Data: cache (jika sah) → bundled. Dalam ujian (saveOverride), bundled
+    //    sahaja — elak IO fail sebenar dalam zon fake-async.
+    final isTest = ref.read(gameDepsProvider).saveOverride != null;
     LoadOutcome outcome;
     try {
-      outcome =
-          await _loader.loadCache(appMajor: _appMajor) ??
+      outcome = isTest
+          ? await _loader.loadBundled(appMajor: _appMajor)
+          : (await _loader.loadCache(appMajor: _appMajor)) ??
               await _loader.loadBundled(appMajor: _appMajor);
     } on DataValidationException {
       outcome = await _loader.loadBundled(appMajor: _appMajor);
@@ -928,8 +934,10 @@ class GameController extends AsyncNotifier<GameState> {
       // Maksimum sekali setiap 6 jam (Peraturan kemas kini data).
       // Simpan masa semak terakhir dalam save via lastMarketRefresh? Tidak —
       // guna fail timestamp berasingan untuk elak ganggu save.
+      final isTest = ref.read(gameDepsProvider).saveOverride != null;
       final dir = await ref.read(gameDepsProvider).docsDir();
       final ts = File('${dir.path}/last_data_check.txt');
+      if (isTest) return; // test: langkau IO masa semak
       if (await ts.exists()) {
         final last = int.tryParse(await ts.readAsString()) ?? 0;
         if (now.millisecondsSinceEpoch ~/ 1000 - last <

@@ -15,7 +15,7 @@ import '../state/game_state.dart';
 
 class HqDioramaGame extends FlameGame {
   final GameData data;
-  final GameState Function() readState;
+  final GameState? Function() readState;
   final bool reduceMotion;
 
   final _rooms = <PositionComponent>[];
@@ -44,7 +44,7 @@ class HqDioramaGame extends FlameGame {
     );
     add(roof);
     // Bilik: grid mengikut slot operasi tier semasa (menyala ikut tahap).
-    final tier = data.tiers[readState().tierIndex0];
+    final tier = data.tiers[readState()?.tierIndex0 ?? 0];
     final cols = 2;
     for (var i = 0; i < tier.maxOperations.clamp(1, 12); i++) {
       final c = i % cols;
@@ -80,7 +80,7 @@ class HqDioramaGame extends FlameGame {
     }
     // Label kemudahan.
     add(TextComponent(
-      text: 'T${readState().tierIndex0 + 1}',
+      text: 'T${(readState()?.tierIndex0 ?? 0) + 1}',
       position: Vector2(size.x - 34, 8),
       textRenderer: TextPaint(
           style: const TextStyle(fontSize: 18, color: Color(0xFF9FB4D8), fontWeight: FontWeight.w700)),
@@ -112,8 +112,15 @@ class HqDioramaGame extends FlameGame {
     super.update(dt);
     _t += dt;
     if (reduceMotion) return;
+    // Pengawal: state mungkin tidak tersedia (container dibuang).
+    final GameState? st;
+    try {
+      st = readState();
+    } catch (_) {
+      return;
+    }
+    if (st == null) return; // container dibuang — langkau
     // Bilik menyala berdenyut halus (sinus — tiada alokasi).
-    final st = readState();
     for (var i = 0; i < _roomPaints.length && i < st.ops.length; i++) {
       final level = st.ops[i].level;
       final glow = (math.sin(_t * 2 + i) * 0.5 + 0.5) * (0.25 + level * 0.07);

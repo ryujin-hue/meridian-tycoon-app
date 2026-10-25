@@ -298,7 +298,10 @@ void main() {
                 'lb.bot.${i.toString().padLeft(2, '0')}.name', (i % 8) + 1,
                 40000 + i * 1000, 8900, 'sniper'),
         ],
-        ['Nama A', 'Nama B'],
+        const [
+          LeaderboardNameEntry(1, 'Nama A'),
+          LeaderboardNameEntry(2, 'Nama B'),
+        ],
       );
       final utc = DateTime.utc(2026, 10, 25);
       final l1 = buildLeague(

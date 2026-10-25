@@ -549,7 +549,7 @@ class MarketNews {
   const MarketNews(this.id, this.scope, this.titleKey, this.incomePercentPct,
       this.durationHours, this.weight);
   factory MarketNews.fromJson(Map<String, dynamic> j) {
-    final eff = (j['effect'] ?? const {}) as Map<String, dynamic>;
+    final eff = (j['effect'] ?? <String, dynamic>{}) as Map<String, dynamic>;
     return MarketNews(
       j['id'] as String,
       j['scope'] as String? ?? 'global',
@@ -572,7 +572,7 @@ class MicroEvent {
   const MicroEvent(this.id, this.titleKey, this.descKey, this.durationMinutes,
       this.effectType, this.effectValue, this.weight);
   factory MicroEvent.fromJson(Map<String, dynamic> j) {
-    final eff = (j['effect'] ?? const {}) as Map<String, dynamic>;
+    final eff = (j['effect'] ?? <String, dynamic>{}) as Map<String, dynamic>;
     return MicroEvent(
       j['id'] as String,
       j['titleKey'] as String,
@@ -686,7 +686,7 @@ class Cosmetic {
   final String descKey;
   final String fixedRarity;
   final int priceKM;
-  final String? tierRef;
+  final int? tierRef; // tier sasaran (int 1-8) atau null — ikut data
   const Cosmetic(this.id, this.type, this.nameKey, this.descKey, this.fixedRarity,
       this.priceKM, this.tierRef);
   factory Cosmetic.fromJson(Map<String, dynamic> j) => Cosmetic(
@@ -696,7 +696,7 @@ class Cosmetic {
         j['descKey'] as String,
         j['fixedRarity'] as String,
         (j['priceKM'] as num).toInt(),
-        j['tierRef'] as String?,
+        (j['tierRef'] as num?)?.toInt(),
       );
 }
 
@@ -816,11 +816,19 @@ class LeaderboardBot {
       );
 }
 
+class LeaderboardNameEntry {
+  final int index;
+  final String nameKey;
+  const LeaderboardNameEntry(this.index, this.nameKey);
+  factory LeaderboardNameEntry.fromJson(Map<String, dynamic> j) =>
+      LeaderboardNameEntry((j['index'] as num).toInt(), j['nameKey'] as String);
+}
+
 class LeaderboardData {
   final String dataVersion;
   final int leagueSize;
   final List<LeaderboardBot> bots;
-  final List<String> namePool;
+  final List<LeaderboardNameEntry> namePool;
   const LeaderboardData(this.dataVersion, this.leagueSize, this.bots, this.namePool);
   factory LeaderboardData.fromJson(Map<String, dynamic> j) => LeaderboardData(
         j['dataVersion'] as String,
@@ -829,7 +837,7 @@ class LeaderboardData {
             .map((e) => LeaderboardBot.fromJson(e as Map<String, dynamic>))
             .toList(growable: false),
         ((j['namePool'] as List?) ?? const [])
-            .map((e) => e as String)
+            .map((e) => LeaderboardNameEntry.fromJson(e as Map<String, dynamic>))
             .toList(growable: false),
       );
 }

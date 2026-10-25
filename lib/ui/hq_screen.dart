@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../app/i18n.dart';
+import '../data/models.dart';
 import '../domain/economy.dart';
 import '../domain/liveops.dart';
 import '../game/hq_diorama_scene.dart';
@@ -120,7 +121,7 @@ class _HqScreenState extends ConsumerState<HqScreen> {
         child: const Icon(Icons.business, size: 64, color: Color(0xFF3A4B66)),
       );
 
-  Widget _opRow(BuildContext context, WidgetRef ref, dynamic i18n, GameState state, OpSlot slot) {
+  Widget _opRow(BuildContext context, WidgetRef ref, I18n i18n, GameState state, OpSlot slot) {
     final data = ref.read(gameDataProvider)!;
     final op = data.operations.firstWhere((o) => o.id == slot.opId);
     final ctl = ref.read(gameControllerProvider.notifier);
@@ -141,7 +142,7 @@ class _HqScreenState extends ConsumerState<HqScreen> {
     );
   }
 
-  Widget _newOpRow(BuildContext context, WidgetRef ref, dynamic i18n, GameState state, dynamic data) {
+  Widget _newOpRow(BuildContext context, WidgetRef ref, I18n i18n, GameState state, GameData data) {
     final ctl = ref.read(gameControllerProvider.notifier);
     final available = data.operations
         .where((o) => o.unlockTier <= state.tierIndex0 + 1)

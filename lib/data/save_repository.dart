@@ -1,5 +1,5 @@
 /// Save repository: JSON berversi, penulisan ATOMIK + sandaran.
-/// Fail: save.json (semasa), save.backup.json (salinan sebelumnya).
+/// Abstrak: fail sebenar (produksi) / memori (test — elak IO dalam fake-async).
 library;
 
 import 'dart:convert';
@@ -7,16 +7,27 @@ import 'dart:io';
 
 import '../state/game_state.dart';
 
-class SaveRepository {
-  final Future<Directory> Function() docsDir;
-  SaveRepository(this.docsDir);
+abstract class SaveRepository {
+  const SaveRepository();
 
-  Future<File> _saveFile() async =>
-      File('${(await docsDir()).path}/save.json');
+  Future<GameState?> load();
+  Future<void> save(GameState state);
+
+  static String export(GameState state) => jsonEncode(state.toJson());
+  static GameState import(String json) =>
+      GameState.fromJson(jsonDecode(json) as Map<String, dynamic>);
+}
+
+/// Simpanan berasaskan fail (produksi): atomic write + backup.
+class FileSaveRepository extends SaveRepository {
+  final Future<Directory> Function() docsDir;
+  const FileSaveRepository(this.docsDir);
+
+  Future<File> _saveFile() async => File('${(await docsDir()).path}/save.json');
   Future<File> _backupFile() async =>
       File('${(await docsDir()).path}/save.backup.json');
 
-  /// Baca save; null jika tiada/rosak (rosak → cuba sandaran).
+  @override
   Future<GameState?> load() async {
     final f = await _saveFile();
     if (await f.exists()) {
@@ -37,7 +48,7 @@ class SaveRepository {
     return null;
   }
 
-  /// Penulisan atomik: tulis fail sementara, renama; salinan lama jadi sandaran.
+  @override
   Future<void> save(GameState state) async {
     final f = await _saveFile();
     final tmp = File('${f.path}.tmp');
@@ -51,11 +62,17 @@ class SaveRepository {
     }
     await tmp.rename(f.path);
   }
+}
 
-  /// Eksport save sebagai string JSON (untuk import/eksport manual).
-  static String export(GameState state) => jsonEncode(state.toJson());
-
-  /// Import; baling FormatException jika rosak.
-  static GameState import(String json) =>
-      GameState.fromJson(jsonDecode(json) as Map<String, dynamic>);
+/// Simpanan dalam memori (test/widget).
+class MemorySaveRepository extends SaveRepository {
+  GameState? state;
+  int saves = 0;
+  @override
+  Future<GameState?> load() async => state;
+  @override
+  Future<void> save(GameState state) async {
+    this.state = state;
+    saves++;
+  }
 }

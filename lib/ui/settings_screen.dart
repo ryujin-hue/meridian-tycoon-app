@@ -10,6 +10,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../app/config.dart';
 import '../../app/i18n.dart';
 import '../../data/save_repository.dart';
+// FileSaveRepository dipakai untuk import/eksport
 import '../../state/game_controller.dart';
 
 class SettingsScreen extends ConsumerWidget {
@@ -124,7 +125,7 @@ class SettingsScreen extends ConsumerWidget {
               try {
                 final imported = SaveRepository.import(raw);
                 // Ganti save semasa (atomik melalui repository).
-                final repo = SaveRepository(ref.read(gameDepsProvider).docsDir);
+                final repo = FileSaveRepository(ref.read(gameDepsProvider).docsDir);
                 await repo.save(imported);
                 if (context.mounted) Navigator.pop(context);
               } catch (_) {
