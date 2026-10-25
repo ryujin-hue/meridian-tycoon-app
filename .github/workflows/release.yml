@@ -68,8 +68,12 @@ jobs:
           RELEASE_RUN_NUMBER: ${{ github.run_number }}
           MT_SIGNED: ${{ steps.keystore.outputs.signed }}
         run: |
-          flutter build apk --release --split-per-abi
-          flutter build apk --release
+          BUILD_ARGS=()
+          if [ -n "$RELEASE_TAG" ] && [ "$GITHUB_REF" == "refs/tags/"* ]; then
+            BUILD_ARGS+=(--build-name "${RELEASE_TAG#v}" --build-number "$RELEASE_RUN_NUMBER")
+          fi
+          flutter build apk --release --split-per-abi "${BUILD_ARGS[@]}"
+          flutter build apk --release "${BUILD_ARGS[@]}"
 
       - name: Collect release notes from commits
         env:
