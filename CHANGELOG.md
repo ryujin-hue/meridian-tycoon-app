@@ -11,3 +11,8 @@
 - Fasa 5: Staf, research, pitch pelabur, LiveOps, leaderboard pocket league, portfolio.
 - Fasa 6: Tutorial 10 langkah, Lottie/Rive (fallback), Settings, notifikasi tempatan, kebolehcapaian, prestasi.
 - Fasa 7: sim 60 hari (docs/ECONOMY_SIM.md), README, Release v0.1.0.
+
+### Dibaiki
+- Model bidaan: yuran didebit semasa bida; harga dibayar semasa menang (tanpa eskro).
+- Boss AI hanya menyertai lelongan legacy; minat CEO mengikut aggression.
+- Core library desugaring untuk flutter_local_notifications; locale ms/id penuh.

@@ -131,3 +131,14 @@ adalah mekanik penjadualan/tafsiran UI, bukan angka ekonomi.
 ## D18 — 2-tap rule
 - Bottom navigation tetap (5 tab) + bar tindakan pantas yang sama pada semua
   tab (Kutip, Bida/Pasar, Naik Tier) — semua tindakan utama ≤ 2 ketukan.
+
+## D19 — Model bidaan & ketegangan premium AI vs band payback (sim)
+- Model tunai: yuran didebit SEMASA bida (tidak dikembalikan); harga dibayar
+  SEMASA MENANG sahaja (tiada eskro) — skrin sahkan tetap memaparkan
+  tunai diperlukan + leverage + yuran sebelum sahkan.
+- Minat CEO AI: `pInterest = clamp(aggression + (favorite ? +0.30 : -0.10) + boost, 0.05, 0.95)`;
+  `auctionBoss` (ceo_victor_nyx) HANYA menyertai sasaran legacy (ikut
+  INTEGRATION.md repo data: "pembangkit bidaan untuk sasaran legacy").
+- tool/sim.dart menemui ketegangan: siling AI premium mendorong harga menang
+  ke ~1.2-1.36x NT, manakala band payback T2-4 menyekat ~1.1-1.2x NT.
+  DILAPORKAN dalam docs/ECONOMY_SIM.md; data TIDAK diubah (keputusan repo data).
