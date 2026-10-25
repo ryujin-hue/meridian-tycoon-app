@@ -645,10 +645,9 @@ class GameController extends AsyncNotifier<GameState> {
     // bidaan tanpa eskro; skrin sahkan tetap memaparkan tunai diperlukan.
     final fee = auctionFee(data.balance, amount,
         reductionPct: _researchValue('auction_fee_reduction_pct'));
-    final maxLev = maxLeverage(data.balance, amount, _netDailyIncome(s));
-    final lev = leverage.clamp(0, maxLev);
-    // Skrin sahkan memaparkan yuran + bahagian tunai (fee + amount - lev);
+    // Lev dipaparkan pada skrin sahkan (fee + amount - lev = tunai diperlukan);
     // semasa bida hanya yuran didebit — harga dibayar semasa menang.
+    maxLeverage(data.balance, amount, _netDailyIncome(s));
     if (s.tm < fee) {
       _toast('ui.msg.no_funds');
       return;

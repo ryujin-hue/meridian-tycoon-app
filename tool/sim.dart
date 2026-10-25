@@ -9,15 +9,15 @@ library;
 import 'dart:convert';
 import 'dart:io';
 
-import '../lib/data/models.dart';
-import '../lib/domain/auction.dart';
-import '../lib/domain/clock.dart';
-import '../lib/domain/economy.dart';
-import '../lib/domain/liveops.dart';
-import '../lib/domain/rng.dart';
-import '../lib/domain/staff.dart';
-import '../lib/domain/tier.dart';
-import '../lib/state/game_state.dart';
+import 'package:meridian_tycoon_app/data/models.dart';
+import 'package:meridian_tycoon_app/domain/auction.dart';
+import 'package:meridian_tycoon_app/domain/clock.dart';
+import 'package:meridian_tycoon_app/domain/economy.dart';
+import 'package:meridian_tycoon_app/domain/liveops.dart';
+import 'package:meridian_tycoon_app/domain/rng.dart';
+import 'package:meridian_tycoon_app/domain/staff.dart';
+import 'package:meridian_tycoon_app/domain/tier.dart';
+import 'package:meridian_tycoon_app/state/game_state.dart';
 
 GameData loadData() {
   final dir = Platform.script.resolve('..').toFilePath();
@@ -412,7 +412,7 @@ void main() {
   buf.writeln('|---|---|');
   for (var i = 0; i < 8; i++) {
     final d = bot.tierReachedDay[i];
-    buf.writeln('| T${i + 1} | ${d == null ? "— (tidak dicapai)" : d} |');
+    buf.writeln('| T${i + 1} | ${d ?? "— (tidak dicapai)"} |');
   }
   buf.writeln();
   buf.writeln('## Syarikat diperoleh & payback sebenar (dari data)');
@@ -426,7 +426,7 @@ void main() {
     final id = parts[1];
     final day = parts[3];
     final price = parts[5];
-    final pb = parts[7].replaceAll('h', '');
+    final pb = parts.length > 7 ? parts[7].replaceAll('h', '') : '?';
     buf.writeln('| $day | $tierId $id | $price | $pb |');
   }
   buf.writeln();
